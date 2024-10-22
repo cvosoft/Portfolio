@@ -1,7 +1,17 @@
-* {
+nav {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+
+    div {
+        display: flex;
+        gap: 48px;
+        font-weight: 500;
+        font-size: 22px;
+    }
 
     a {
         text-decoration: none;
