@@ -18,10 +18,10 @@ body {
     a {
         text-decoration: none;
         color: #E15544;
-    }
 
-    a:hover {
-        color: #02F4BF;
+        &:hover {
+            color: #02F4BF;
+        }
     }
 
 }
