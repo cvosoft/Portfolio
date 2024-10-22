@@ -4,10 +4,22 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'robotomono';
+    src: url('./assets/font/robotomono.ttf') format('truetype');
+}
+
 body {
+    font-family: 'robotomono', sans-serif;
     background: linear-gradient(174.25deg, #0B042D 24.9%, #1F0B80 39.2%, #0B042F 72.02%, #241085 106.54%);
     width: 1440px;
     height: 4348px;
+
+    a {
+        text-decoration: none;
+        color: #E15544;
+    }
+
 }
 
 .red-text {
