@@ -22,7 +22,7 @@ export class ContactComponent {
   };
 
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://christophvoelker.com/sendMail.php',
