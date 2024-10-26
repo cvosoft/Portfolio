@@ -1,1 +1,21 @@
 <h2>Contact me</h2>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit()">
+
+        <label for="name">Name</label>
+        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email</label>
+        <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email">
+
+        <label for="message">message</label>
+        <textarea [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"></textarea>
+
+        <input type="checkbox">
+        I've read the privacy policy and agree to the processing of my data as outlined.
+
+        <input type="submit" value="Send">
+
+    </form>
+</div>
