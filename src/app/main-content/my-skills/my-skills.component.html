@@ -1,1 +1,13 @@
-<h2>My Skills</h2>
+<h2 class="red-text">My Skills</h2>
+
+<section>
+
+    @for (item of skillsList; track item.name) {
+    <div>
+        <img src="../../../assets/img/skills/{{item.img}}">
+        <br>
+        {{item.name}}
+    </div>
+    }
+
+</section>
