@@ -36,7 +36,7 @@ export class MySkillsComponent {
     },
     {
       name: "Firebase",
-      img: "fire.svg"
+      img: "firebase.svg"
     },
     {
       name: "GIT",
