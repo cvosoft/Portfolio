@@ -1,5 +1,27 @@
-
-h1,h2 {
+h1,
+h2 {
     font-size: 82px;
     font-weight: 700;
+}
+
+
+
+
+.middle {
+    display: flex;
+    align-items: end;
+
+    img {
+        height: 500px;
+        width: auto;
+    }
+
+    span {
+        transform: rotate(-90deg);
+        border: 1px solid #02F4BF;
+        padding: 15px 30px;
+        color: #E15544;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
