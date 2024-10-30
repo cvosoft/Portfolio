@@ -9,7 +9,8 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
-  new TranslateHttpLoader(http, './i18n/', '.json');
+  new TranslateHttpLoader(http, '../../assets/i18n/', '.json');
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
