@@ -7,6 +7,7 @@ h2 {
 
 
 
+
 .middle {
     display: flex;
     align-items: end;
@@ -16,7 +17,14 @@ h2 {
         width: 400px;
     }
 
-    span {
+
+    svg:hover {
+        fill: rgb(0, 255, 132);
+        border: 1px solid #E15544;
+    }
+
+
+    >span {
         transform: rotate(-90deg);
         border: 1px solid #02F4BF;
         padding: 15px 30px;
