@@ -11,8 +11,10 @@ h2 {
 
 .middle {
     //position: relative;
+    padding: 0px 50px;
     display: flex;
     align-items: end;
+    justify-content: space-around;
 
     img {
         height: 600px;
@@ -39,7 +41,7 @@ h2 {
     span {
         display: inline-block;
         margin-bottom: 100px;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) translateY(-50px);
         border: 1px solid #02F4BF;
         padding: 15px 30px;
         color: #E15544;
