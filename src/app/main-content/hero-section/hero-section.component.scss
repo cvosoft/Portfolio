@@ -9,17 +9,16 @@ h2 {
 }
 
 
-
-
-
 .middle {
-    position: relative;
+    //position: relative;
     display: flex;
     align-items: end;
 
     img {
-        height: auto;
-        width: 400px;
+        height: 600px;
+        width: auto;
+        //object-fit: cover;
+        //object-position: 0% 0%;
     }
 
     svg {
@@ -37,8 +36,9 @@ h2 {
         border: 2px solid #E15544;
     }
 
-
-    >span {
+    span {
+        display: inline-block;
+        margin-bottom: 100px;
         transform: rotate(-90deg);
         border: 1px solid #02F4BF;
         padding: 15px 30px;
