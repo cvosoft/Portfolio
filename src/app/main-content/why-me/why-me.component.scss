@@ -1,6 +1,6 @@
-
 section {
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -15,4 +15,19 @@ img {
     width: 300px;
     object-fit: cover;
     object-position: 0% 0%;
+}
+
+
+button {
+    background-color: #02F4BF;
+    color: #0B042D;
+    width: 169px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: unset;
+
+
 }
