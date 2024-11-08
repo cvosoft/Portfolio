@@ -5,11 +5,12 @@ import { WhyMeComponent } from "./why-me/why-me.component";
 import { ReferencesComponent } from "./references/references.component";
 import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
+import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [HeroSectionComponent, ContactComponent, WhyMeComponent, ReferencesComponent, MyProjectsComponent, MySkillsComponent],
+  imports: [NavBarComponent, HeroSectionComponent, ContactComponent, WhyMeComponent, ReferencesComponent, MyProjectsComponent, MySkillsComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
