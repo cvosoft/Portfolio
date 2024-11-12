@@ -1,9 +1,21 @@
-<h2 class="red-text">My Projects</h2>
+<section>
 
-<a href="https://join.christophvoelker.com">Join</a>
-<a href="https://github.com/cvosoft/Join">Join (Git)</a>
+    <h2 class="red-text">My Projects</h2>
 
-<br>
+    @for (item of projectsList; track item.name; let toggler = $odd) {
+    <div [ngClass]="{'reverse':toggler}" class="singleProject">
+        <img src="../../../assets/img/projects/{{item.img}}">
 
-<a href="https://epl.christophvoelker.com">El Pollo Loco (live)</a>
-<a href="https://github.com/cvosoft/JumpNRun">El Pollo Loco (Git)</a>
+        <div class="otherSide">
+            <h3>{{item.name}}</h3>
+            <span>{{item.skills}}</span>
+            <span>{{item.text}}</span>
+            <div>
+                <button><a href="{{item.gitURL}}">GitHub</a></button>
+                <button><a href="{{item.liveURL}}">Live Test</a></button>
+            </div>
+        </div>
+    </div>
+    }
+
+</section>

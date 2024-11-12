@@ -51,7 +51,7 @@ export class MySkillsComponent {
       img: "matdes.svg"
     },
     {
-      name: "Challenge me",
+      name: 'Challenge me',
       img: "chall.svg"
     }
   ];

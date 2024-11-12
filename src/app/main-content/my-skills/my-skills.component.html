@@ -1,13 +1,17 @@
-<h2 class="red-text">My Skills</h2>
-
 <section>
 
-    @for (item of skillsList; track item.name) {
-    <div>
-        <img src="../../../assets/img/skills/{{item.img}}">
-        <br>
-        {{item.name}}
+    <h2 class="red-text">My Skills</h2>
+
+
+    <div class="skillContainer">
+
+        @for (item of skillsList; track item.name) {
+        <div class="singleSkill">
+            <img src="../../../assets/img/skills/{{item.img}}">
+            <span>{{item.name}}</span>
+        </div>
+        }
+
     </div>
-    }
 
 </section>

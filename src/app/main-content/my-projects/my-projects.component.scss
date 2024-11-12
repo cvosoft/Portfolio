@@ -1,0 +1,21 @@
+.singleProject {
+    display: flex;
+    //flex-direction: row-reverse;
+
+    .otherSide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 588px;
+        height: 371px;
+        object-fit: cover;
+        object-position: 0%;
+    }
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+}
