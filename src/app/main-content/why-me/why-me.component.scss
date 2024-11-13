@@ -22,5 +22,28 @@ span {
 }
 
 
+.loc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 31px;
+}
 
+.d-none {
+    display: none;
+}
 
+.loc-icon:hover {
+    animation: shift .1s forwards;
+}
+
+@keyframes shift {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-3px);
+    }
+
+}

@@ -20,7 +20,12 @@
 
             <h3 class="red-text">I am</h3>
             <div>
-                <img style="width: 33px;height:41px" src="../../../assets/img/location.svg">
+                <div class="loc-container">
+                    <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" class="loc-icon" style="width: 33px;height:41px"
+                        src="../../../assets/img/location.svg">
+                    <img [ngClass]="{'d-none': toggler}" style="width: 21px;height:9px"
+                        src="../../../assets/img/Ellipse20.svg">
+                </div>
                 <span>located in Lübeck</span>
             </div>
 
