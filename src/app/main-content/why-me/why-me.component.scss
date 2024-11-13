@@ -33,6 +33,10 @@ span {
     display: none;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .loc-icon:hover {
     animation: shift .1s forwards;
 }

@@ -20,4 +20,6 @@ export class WhyMeComponent {
 
   toggler:boolean = true;
 
+  workIconHover:boolean = false;
+
 }
