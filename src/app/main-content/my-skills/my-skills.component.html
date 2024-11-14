@@ -5,17 +5,31 @@
 
     <div class="skillContainer">
 
-        @for (item of skillsList; track item.name) {
+        @for (item of skillsList; track item.name; let last = $last) {
+        @if(!last){
+
         <div class="singleSkill">
             <img src="../../../assets/img/skills/{{item.img}}">
             <span>{{item.name}}</span>
         </div>
+        } @else {
+        <div style="width:384px; flex-direction:row" class="singleSkill">
+            <div (mouseenter)="challengeHover=true;" (mouseleave)="challengeHover=false;" style="gap:10px">
+                <img src="../../../assets/img/skills/{{item.img}}">
+                <span>{{item.name}}</span>
+            </div>
+            <span [ngClass]="{'d-none': !challengeHover}">
+                I am always happy to learn new technologies, just tell me what you need.
+            </span>
+        </div>
         }
+        }
+
+
+
 
     </div>
 
-    <span>
-        I am always happy to learn new technonogies, just tell me what you need.
-    </span>
+
 
 </section>

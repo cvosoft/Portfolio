@@ -18,8 +18,9 @@ export class WhyMeComponent {
   }
 
 
-  toggler:boolean = true;
+  toggler: boolean = true;
 
-  workIconHover:boolean = false;
+  workIconHover: boolean = false;
+
 
 }
