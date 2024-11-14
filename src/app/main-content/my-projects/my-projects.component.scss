@@ -1,11 +1,36 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h2 {
+    margin-bottom: 80px;
+}
+
 .singleProject {
     display: flex;
     //flex-direction: row-reverse;
-    max-width: 1178px;;
+    max-width: 1178px;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    span {
+        line-height: 25.2px;
+    }
 
     .otherSide {
         display: flex;
+        gap: 35px;
         flex-direction: column;
+
+        .button-pair {
+            display: flex;
+            gap: 24px;
+        }
+
     }
 
     img {
