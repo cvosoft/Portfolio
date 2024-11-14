@@ -103,6 +103,7 @@ section {
 }
 
 h2 {
+    margin-bottom: 30px;
     font-size: 54px;
     font-weight: 500;
 }
@@ -110,6 +111,14 @@ h2 {
 h3 {
     font-size: 48px;
     font-weight: 700;
+}
+
+.right {
+    text-align: right;
+}
+
+.centered {
+    text-align: center;
 }
 
 button {

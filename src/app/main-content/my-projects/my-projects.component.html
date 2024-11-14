@@ -1,6 +1,6 @@
 <section>
 
-    <h2 class="red-text">My Projects</h2>
+    <h2 class="red-text centered">My Projects</h2>
 
     @for (item of projectsList; track item.name; let toggler = $odd) {
     <div [ngClass]="{'reverse':toggler}" class="singleProject">
