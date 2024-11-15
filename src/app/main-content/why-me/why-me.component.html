@@ -5,49 +5,34 @@
     </div>
 
     <div class="right">
-
         <div>
             <h2 class="red-text">Why me</h2>
             <span class="green-text">
-
                 {{'whyme' | translate}}
-
             </span>
-
         </div>
 
-        <div>
+        <div class="grid-container">
 
-            <h3 class="red-text right">I am</h3>
-            <div>
-                <div class="loc-container">
-                    <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" class="loc-icon"
-                        style="width: 33px;height:41px" src="../../../assets/img/location.svg">
-                    <img [ngClass]="{'d-none': toggler}" style="width: 21px;height:9px"
-                        src="../../../assets/img/Ellipse20.svg">
+            <h3 class="el1-1 red-text">I am</h3>
+
+            <div class="el-1-2 flex-row">
+                <div class="images">
+                    <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" src="../../../assets/img/location.svg">
+                    <img [ngClass]="{'d-none': toggler}" src="../../../assets/img/Ellipse20.svg">
                 </div>
-                <span>located in Lübeck</span>
+                <span>located<br>in Lübeck</span>
             </div>
 
-            <img style="width: 23px;height:56px" src="../../../assets/img/Arrow 6.svg">
+            <img class="el-2-2" src="../../../assets/img/Arrow 6.svg">
 
-            <div>
-                <div style="justify-content: end; width:62px; height:56px; display:flex; align-items:end">
-                    <img [ngClass]="{'d-none': workIconHover}"
-                        (mouseenter)="workIconHover=true;" style="text-align:right;width: 54px;height:48px;"
-                        src="../../../assets/img/IconRemote.svg">
-                    <img [ngClass]="{'d-none': !workIconHover}" (mouseleave)="workIconHover=false;"
-                        style="width:62px; height:56px" src="../../../assets/img/IconRemote2.svg">
-                </div>
-                <div>
-
-                    <span>open to work remote</span>
-                </div>
+            <div class="el-3-2 flex-row border">
+                <img src="../../../assets/img/IconRemote.svg">
+                <span>open to<br>work remote</span>
+                <img src="../../../assets/img/Arrow_contact.svg">
             </div>
 
-            <img style="width: 80px;height:37px" src="../../../assets/img/Arrow_contact.svg">
-
-            <button>Let's talk</button>
+            <button class="el-4-3">Let's talk</button>
 
         </div>
     </div>

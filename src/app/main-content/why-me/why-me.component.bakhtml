@@ -1,0 +1,50 @@
+<section>
+
+    <div class="left">
+        <img src="../../../assets/img/whyme/hero.jpg">
+    </div>
+
+    <div class="right">
+
+        <div>
+            <h2 class="red-text">Why me</h2>
+            <span class="green-text">
+
+                {{'whyme' | translate}}
+
+            </span>
+
+        </div>
+
+        <div style="border: 1px solid red" class="grid-container">
+
+            <h3 class="grid-item red-text">I am</h3>
+
+            <div class="grid-item loc-container flex-row-center grid-centered">
+                <div class="images">
+                    <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" class="loc-icon"
+                        style="width: 33px;height:41px" src="../../../assets/img/location.svg">
+                    <img [ngClass]="{'d-none': toggler}" style="width: 21px;height:9px"
+                        src="../../../assets/img/Ellipse20.svg">
+                </div>
+                <span>located<br>in Lübeck</span>
+            </div>
+
+            <img class="grid-item grid-centered" style="width: 23px;height:56px;grid-row: 2;grid-column: 2"
+                src="../../../assets/img/Arrow 6.svg">
+
+            <div class="grid-item" style="grid-column: 2;grid-row: 3;">
+                <img style="width:54px; height:47px" src="../../../assets/img/IconRemote.svg">
+                <span>open to work remote</span>
+                <img class="grid-item" style="align-self:end;  justify-self: start; grid-column: 3; grid-row:3; width: 80px;height:37px"
+                src="../../../assets/img/Arrow_contact.svg">
+            </div>
+
+            
+
+            <button style="grid-row: 4; grid-column: 3;">Let's talk</button>
+
+        </div>
+    </div>
+
+</section>
