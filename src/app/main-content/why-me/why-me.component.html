@@ -12,29 +12,8 @@
             </span>
         </div>
 
-        <div class="grid-container">
+        <app-i-am-container></app-i-am-container>
 
-            <h3 class="el1-1 red-text">I am</h3>
-
-            <div class="el-1-2 flex-row">
-                <div class="images">
-                    <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" src="../../../assets/img/location.svg">
-                    <img [ngClass]="{'d-none': toggler}" src="../../../assets/img/Ellipse20.svg">
-                </div>
-                <span>located<br>in Lübeck</span>
-            </div>
-
-            <img class="el-2-2" src="../../../assets/img/Arrow 6.svg">
-
-            <div class="el-3-2 flex-row border">
-                <img src="../../../assets/img/IconRemote.svg">
-                <span>open to<br>work remote</span>
-                <img src="../../../assets/img/Arrow_contact.svg">
-            </div>
-
-            <button class="el-4-3">Let's talk</button>
-
-        </div>
     </div>
 
 </section>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IAmContainerComponent } from "../why-me/i-am-container/i-am-container.component";
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-why-me',
   standalone: true,
-  imports: [TranslateModule, CommonModule],
+  imports: [TranslateModule, CommonModule,IAmContainerComponent],
   templateUrl: './why-me.component.html',
   styleUrl: './why-me.component.scss'
 })
@@ -18,9 +19,6 @@ export class WhyMeComponent {
   }
 
 
-  toggler: boolean = true;
-
-  workIconHover: boolean = false;
 
 
 }
