@@ -6,11 +6,11 @@
     </div>
 
     <div class="above-form">
-        <span style="flex:1">
+        <span style="flex:.5">
             Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work
             together.
         </span>
-        <span style="flex:1">
+        <div style="flex:.5; display: flex; justify-content: space-between;">
             <div class="flex-align-center">
 
                 <img src="../../../assets/img/contact/email.svg">
@@ -18,8 +18,17 @@
                     E-mail: <a href="mailto:contact@christophvoelker.com">contact(at)christophvoelker.com</a>
                 </span>
             </div>
-        </span>
-        <img src="../../../assets/img/arrow_up.svg">
+
+
+            <a href="#hero">
+                <svg width="22" height="50" viewBox="0 0 22 50" fill="#E15544" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.58575 4.9366L2.67354 11.2396C2.29178 11.5877 1.7077 11.5877 1.32595 11.2396L0.810337 10.7694C0.375397 10.3728 0.375397 9.68822 0.810337 9.29161L10.3262 0.61441C10.708 0.266304 11.292 0.266304 11.6738 0.61441L21.1897 9.29161C21.6246 9.68822 21.6246 10.3728 21.1897 10.7694L20.6741 11.2396C20.2923 11.5877 19.7082 11.5877 19.3265 11.2396L12.4142 4.9366L12.4142 49C12.4142 49.5523 11.9665 50 11.4142 50H10.5858C10.0335 50 9.58575 49.5523 9.58575 49L9.58575 4.9366Z"
+                        fill="#none" />
+                </svg></a>
+
+        </div>
+
     </div>
 
 
@@ -27,27 +36,29 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-        <div>
-
-            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name" required>
-
-
-            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email"
-                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-
-
-            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="subject"
-                placeholder="Your Message" required></textarea>
+        <div class="above-form">
+            <div style="flex:0.5">
+                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name"
+                    required>
+                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            </div>
+            <textarea style="flex:0.5" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                name="subject" placeholder="Your Message" required></textarea>
         </div>
 
         @if (!message.valid && message.touched) {
         <span>Please enter a message</span>
         }
 
-        <input type="checkbox">
-        I've read the privacy policy and agree to the processing of my data as outlined.
-
-        <input type="submit" value="Send">
+        <div style="display:flex; justify-content: space-between;">
+            <div>
+                <input type="checkbox">
+                I've read the <a href="privacypolicy">privacy policy</a> and agree to the processing of my data as
+                outlined.
+            </div>
+            <input type="submit" value="Send">
+        </div>
 
     </form>
 
