@@ -1,25 +1,25 @@
-
-
 <div class="grid-container">
 
-    <h3 class="el1-1 red-text">I am</h3>
+    <h3 class="el1-1 red-text grid-center">I am</h3>
 
-    <div class="el-1-2 flex-row">
-        <div class="images">
-            <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" src="../../../assets/img/location.svg">
+    <div class="el-1-2 flex-row grid-center">
+        <div class="images flex-col">
+            <img (mouseenter)="toggler=false;" (mouseleave)="toggler=true;" src="../../../assets/img/location.svg"
+                class="loc-icon">
             <img [ngClass]="{'d-none': toggler}" src="../../../assets/img/Ellipse20.svg">
         </div>
-        <span>located<br>in Lübeck</span>
+        <span class="text-left">located<br>in Lübeck</span>
     </div>
 
-    <img class="el-2-2" src="../../../assets/img/Arrow 6.svg">
+    <img class="el-2-2 grid-center" src="../../../assets/img/Arrow 6.svg">
 
-    <div class="el-3-2 flex-row border">
-        <img src="../../../assets/img/IconRemote.svg">
-        <span>open to<br>work remote</span>
-        <img src="../../../assets/img/Arrow_contact.svg">
+    <div class="el-3-2 flex-row grid-center">
+        <div class="remote-image"></div>
+        <span class="text-left">open to<br>work remote</span>
     </div>
 
-    <button class="el-4-3">Let's talk</button>
+    <img class="el-3-3 grid-align-end" src="../../../assets/img/Arrow_contact.svg">
+
+    <a class="el-4-3 grid-end" href="#contact"><button>Let's talk</button></a>
 
 </div>
