@@ -9,10 +9,13 @@
     src: url('./assets/font/robotomono.ttf') format('truetype');
 }
 
-html {
-    scroll-padding-top: 92px;
-    /* HEADER HEIGHT */
+
+@supports (not (-moz-appearance: none)) {
+    html {
+        scroll-padding-top: 92px;
+    }
 }
+
 
 body {
     font-family: 'robotomono', sans-serif;
