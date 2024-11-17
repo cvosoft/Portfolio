@@ -5,12 +5,24 @@
         <img src="../../../assets/img/Arrow_contact.svg">
     </div>
 
-    <span>
-        Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work
-        together.
-    </span>
+    <div class="above-form">
+        <span style="flex:1">
+            Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work
+            together.
+        </span>
+        <span style="flex:1">
+            <div class="flex-align-center">
 
-    <img src="../../../assets/img/arrow_up.svg">
+                <img src="../../../assets/img/contact/email.svg">
+                <span class>
+                    E-mail: <a href="mailto:contact@christophvoelker.com">contact(at)christophvoelker.com</a>
+                </span>
+            </div>
+        </span>
+        <img src="../../../assets/img/arrow_up.svg">
+    </div>
+
+
 
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
