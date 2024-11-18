@@ -1,4 +1,13 @@
 {
+    "menu": {
+        "why": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "FRONTEND ENTWICKLER"
+    },
     "whyme": {
         "headline": "Über mich",
         "text": "Ich bin total motiviert!",
@@ -6,5 +15,14 @@
         "location": "wohne<br>in Lübeck",
         "remote": "kann 'remote'<br>arbeiten",
         "button": "Kontaktieren"
+    },
+    "skills": {
+        "title": "Fähigkeiten"
+    },
+    "projects": {
+        "title": "Projekte"
+    },
+    "contact": {
+        "title": "Kontakt"
     }
 }

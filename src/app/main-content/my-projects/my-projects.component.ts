@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
