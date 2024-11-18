@@ -12,6 +12,10 @@ button {
     color: #0B042D;
     font-size: 18px;
     font-weight: 500;
+
+    &:hover {
+        color: #E15544;
+    }
 }
 
 .primary2 {
@@ -41,6 +45,11 @@ button {
     color: #E15544;
     font-size: 18px;
     font-weight: 500;
+
+    &:hover {
+        color: #02F4BF;
+    }
+
 }
 
 .secondary2 {
