@@ -8,6 +8,8 @@
     </div>
 
     <div class="languageSelector">
-        <a (click)="useLanguage('de')">DE</a>|<a (click)="useLanguage('en')">EN</a>
+        <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
+        |
+        <a [ngStyle]="{'color': getLanguage2()}" (click)="useLanguage('en')">EN</a>
     </div>
 </nav>

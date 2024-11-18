@@ -13,9 +13,9 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class WhyMeComponent {
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    //this.translate.addLangs(['de', 'en']);
+    //this.translate.setDefaultLang('de');
+    //this.translate.use('de');
   }
 
 

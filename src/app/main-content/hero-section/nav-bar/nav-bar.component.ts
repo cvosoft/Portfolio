@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { LogoComponent } from "../../../shared/logo/logo.component";
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
@@ -6,7 +7,7 @@ import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [LogoComponent, TranslateModule],
+  imports: [LogoComponent, TranslateModule, CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
@@ -14,9 +15,31 @@ export class NavBarComponent {
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+
+    //console.log(this.translate.currentLang);
   }
+
+  getLanguage1() {
+    if (this.translate.currentLang == "de") {
+      return "#02F4BF"
+    }
+    else {
+      return "#E15544"
+
+    } // E15544
+  };
+
+
+  getLanguage2() {
+    if (this.translate.currentLang == "en") {
+      return "#02F4BF"
+    }
+    else {
+      return "#E15544"
+    }
+  };
 
 
   useLanguage(language: string): void {
