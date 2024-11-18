@@ -6,7 +6,7 @@ import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [NavBarComponent, TranslateModule],
+  imports: [TranslateModule],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })
