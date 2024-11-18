@@ -1,6 +1,6 @@
 <div class="grid-container">
 
-    <h3 class="el1-1 red-text grid-center">I am</h3>
+    <h3 class="el1-1 red-text grid-center">{{'whyme.block1' | translate}}</h3>
 
     <div class="el-1-2 flex-row grid-center">
         <div class="images flex-col">
@@ -8,18 +8,18 @@
                 class="loc-icon">
             <img [ngClass]="{'d-none': toggler}" src="../../../assets/img/Ellipse20.svg">
         </div>
-        <span class="text-left">located<br>in Lübeck</span>
+        <span class="text-left" [innerHTML]="'whyme.location' | translate"></span>
     </div>
 
     <img class="el-2-2 grid-center" src="../../../assets/img/Arrow 6.svg">
 
     <div class="el-3-2 flex-row grid-center">
         <div class="remote-image"></div>
-        <span class="text-left">open to<br>work remote</span>
+        <span class="text-left" [innerHTML]="'whyme.remote' | translate"></span>
     </div>
 
     <img class="el-3-3 grid-align-end" src="../../../assets/img/Arrow_contact.svg">
 
-    <a class="el-4-3 grid-end" href="#contact"><button class="primary1">Let's talk</button></a>
+    <a class="el-4-3 grid-end" href="#contact"><button class="primary1">{{'whyme.button' | translate}}</button></a>
 
 </div>

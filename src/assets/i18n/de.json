@@ -1,3 +1,10 @@
 {
-    "whyme": "Ich bin sehr motiviert!"
+    "whyme": {
+        "headline": "Über mich",
+        "text": "Ich bin total motiviert!",
+        "block1": "Ich",
+        "location": "wohne<br>in Lübeck",
+        "remote": "kann 'remote'<br>arbeiten",
+        "button": "Kontaktieren"
+    }
 }

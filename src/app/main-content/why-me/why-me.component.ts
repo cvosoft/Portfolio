@@ -7,7 +7,7 @@ import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-why-me',
   standalone: true,
-  imports: [TranslateModule, CommonModule,IAmContainerComponent],
+  imports: [TranslateModule, CommonModule, IAmContainerComponent],
   templateUrl: './why-me.component.html',
   styleUrl: './why-me.component.scss'
 })

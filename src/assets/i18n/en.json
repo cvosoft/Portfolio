@@ -1,3 +1,10 @@
 {
-    "whyme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team."
+    "whyme": {
+        "headline": "Why me",
+        "text": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+        "block1": "I am",
+        "location": "located<br>in Lübeck",
+        "remote": "open to<br>work remote",
+        "button": "Let's talk"
+    }
 }
