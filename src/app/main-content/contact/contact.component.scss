@@ -31,7 +31,6 @@ svg:hover {
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 [type=email],
-select,
 textarea {
   background-color: transparent;
   //styleName: Version 1  Web/H5;
@@ -66,4 +65,17 @@ input[type=submit] {
   background-color: transparent;
   font-size: 18px;
   font-weight: 500;
+}
+
+
+input[type=text]:user-invalid {
+  border: 2px dotted red;
+}
+
+input[type=email]:user-invalid {
+  border: 2px dotted red;
+}
+
+textarea:user-invalid {
+  border: 2px dotted red;
 }

@@ -37,26 +37,32 @@
 
         <div class="above-form">
             <div style="flex:0.5">
-                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name"
-                    required>
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email"
+                <input #name="ngModel" (keyup)="checkEnableButton()" [(ngModel)]="contactData.name"
+                    title="Enter your name" type="text" id="name" name="name" placeholder="Your Name" required>
+                <input #email="ngModel" [(ngModel)]="contactData.email" title="Enter your email adress" type="email"
+                    id="email" name="email" placeholder="Your Email"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             </div>
-            <textarea style="flex:0.5" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
-                name="subject" placeholder="Your Message" required></textarea>
+            <textarea style="flex:0.5" #message="ngModel" title="Enter your message" minlength="4"
+                [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
+                required></textarea>
         </div>
 
         @if (!message.valid && message.touched) {
         <span>Please enter a message</span>
+        } @else if (!name.valid && name.touched) {
+        <span>Please enter a Name</span>
+        } @else if (!email.valid && email.touched) {
+        <span>Please enter an Emailadress</span>
         }
 
         <div style="display:flex; justify-content: space-between;">
             <div>
-                <input type="checkbox">
-                I've read the <a href="privacypolicy">privacy policy</a> and agree to the processing of my data as
-                outlined.
+                <!--<input type="checkbox">-->
+                Notice the <a href="privacypolicy">privacy policy</a> regarding the processing of your data.
             </div>
-            <input type="submit" value="Send">
+            <!-- <input type="submit" value="Send"> -->
+            <button [disabled]="disabledVariable">Send</button>
         </div>
 
     </form>

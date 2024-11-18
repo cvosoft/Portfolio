@@ -12,6 +12,13 @@ import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 })
 export class ContactComponent {
 
+  disabledVariable = true;
+
+  checkEnableButton() {
+    this.disabledVariable = !this.disabledVariable;
+    console.log("dsgdsg");
+    
+  }
 
   http = inject(HttpClient);
 
@@ -21,6 +28,7 @@ export class ContactComponent {
     email: "",
     message: "",
   };
+
 
 
   mailTest = false;
