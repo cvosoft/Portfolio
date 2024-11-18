@@ -23,6 +23,12 @@
         "title": "My Projects"
     },
     "contact": {
-        "title": "Contact me"
+        "title": "Contact me",
+        "text": "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together."
+    },
+    "footer": {
+        "legal": "Legal notice",
+        "privacy": "privacy policy",
+        "logotext": "frontend developer"
     }
 }

@@ -23,6 +23,13 @@
         "title": "Projekte"
     },
     "contact": {
-        "title": "Kontakt"
+        "title": "Kontakt",
+        "text": "Immer noch unsicher?"
+    },
+    "footer":
+    {
+        "legal":"Impressum",
+        "privacy": "Datenschutzerklärung",
+        "logotext": "frontend entwickler"
     }
 }
