@@ -14,10 +14,16 @@ export class ContactComponent {
 
   disabledVariable = true;
 
+
   checkEnableButton() {
-    this.disabledVariable = !this.disabledVariable;
-    console.log("dsgdsg");
-    
+    if (this.disabledVariable) {
+      if (this.contactData.name.length > 0 && this.contactData.email.length > 0 && this.contactData.message.length > 0) {
+        this.disabledVariable = !this.disabledVariable;
+      }
+    }
+
+
+
   }
 
   http = inject(HttpClient);

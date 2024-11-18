@@ -39,11 +39,11 @@
             <div style="flex:0.5">
                 <input #name="ngModel" (keyup)="checkEnableButton()" [(ngModel)]="contactData.name"
                     title="Enter your name" type="text" id="name" name="name" placeholder="Your Name" required>
-                <input #email="ngModel" [(ngModel)]="contactData.email" title="Enter your email adress" type="email"
+                <input (keyup)="checkEnableButton()" #email="ngModel" [(ngModel)]="contactData.email" title="Enter your email adress" type="email"
                     id="email" name="email" placeholder="Your Email"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             </div>
-            <textarea style="flex:0.5" #message="ngModel" title="Enter your message" minlength="4"
+            <textarea (keyup)="checkEnableButton()" style="flex:0.5" #message="ngModel" title="Enter your message" minlength="4"
                 [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
                 required></textarea>
         </div>
