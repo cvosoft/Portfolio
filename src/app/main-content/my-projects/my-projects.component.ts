@@ -13,7 +13,7 @@ export class MyProjectsComponent {
   projectsList = [
     {
       name: "Join",
-      skills: "Angular | TypeScript | HTML | CSS | Firebase",
+      skills: "JavaScript | HTML | CSS | Firebase",
       text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       img: "joinscreenshot.png",
       liveURL: "https://join.christophvoelker.com",
@@ -29,7 +29,7 @@ export class MyProjectsComponent {
     },
     {
       name: "DA Bubble",
-      skills: "JavaScript | HTML | CSS",
+      skills: "Angular | TypeScript | HTML | CSS",
       text: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       img: "dabubblescreenshot.png",
       liveURL: "",
