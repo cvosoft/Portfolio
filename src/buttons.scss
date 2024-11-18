@@ -1,0 +1,68 @@
+button {
+    width: 169px;
+    height: 52px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: unset;
+    font-family: 'robotomono';
+}
+
+.primary1 {
+    background-color: #02F4BF;
+    color: #0B042D;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.primary2 {
+    background-color: #02F4BF;
+    color: #E15544;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.primary3 {
+    background-color: #02F4BF;
+    color: #E15544;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.primary4 {
+    background-color: #BEBEBE;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.secondary1 {
+    background-color: transparent;
+    border: 1px solid #02F4BF;
+    color: #E15544;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.secondary2 {
+    background-color: transparent;
+    border: 1px solid #02F4BF;
+    color: #02F4BF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.secondary3 {
+    background-color: transparent;
+    border: 1px solid #E15544;
+    color: #E15544;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.secondary4 {
+    background-color: transparent;
+    border: 1px solid #827B7B;
+    color: #827B7B;
+    font-size: 18px;
+    font-weight: 500;
+}

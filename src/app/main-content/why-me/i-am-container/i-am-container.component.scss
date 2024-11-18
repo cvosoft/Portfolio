@@ -45,7 +45,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .flex-col {
@@ -66,8 +66,8 @@
     width: 62px; // 54
     height: 56px; // 48
     background-repeat: no-repeat;
-    text-align: right;
-
+    margin-bottom: 5px;
+    
     &:hover {
         background: url("../../../../assets/img/IconRemote2.svg");
         background-position: -8px -8px;
