@@ -62,7 +62,7 @@
                 Notice the <a href="privacypolicy">privacy policy</a> regarding the processing of your data.
             </div>
             <!-- <input type="submit" value="Send"> -->
-            <button [disabled]="disabledVariable">Send</button>
+            <button [disabled]="!contactForm.valid">Send</button>
         </div>
 
     </form>
