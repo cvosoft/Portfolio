@@ -58,8 +58,9 @@
 
         <div style="display:flex; justify-content: space-between;">
             <div>
-                <input #checkbox type="checkbox" required>
-                {{checkbox.checked}}
+                <input #checkbox ngModel type="checkbox" required>
+                <!--box: {{checkbox.checked}}
+                form: {{contactForm.valid}}-->
                 <span>I've read the <a href="privacypolicy">privacy policy</a> and agree to the processing of
                     my data as outlined.
                 </span>
