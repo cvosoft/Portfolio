@@ -79,3 +79,64 @@ input[type=email]:user-invalid {
 textarea:user-invalid {
   border: 2px dotted red;
 }
+
+
+.hover-fat:hover {
+  font-weight: 700;
+  color: #E15544;
+}
+
+
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox>span {
+  //color: #34495E;
+  //padding: 0.5rem 0.25rem;
+}
+
+.checkbox>input {
+  height: 18px;
+  width: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 3px solid #E15544;
+  border-radius: 2px;
+  outline: none;
+  //transition-duration: 0.3s;
+  //background-color: #41B883;
+  cursor: pointer;
+}
+
+.checkbox>input:checked {
+  //border: 1px solid #41B883;
+  //background-color: #34495E;
+}
+
+//.checkbox>input:checked+span::before {
+.checkbox>input:checked+span::before  {
+  content: '\2714';
+  width: 18px;
+  height: 18px;
+  display: flex;
+  //text-align: center;
+  justify-content: center;
+  color: #E15544;
+  position: absolute;
+  left: 0px;
+  top: 0x;
+  background-color: #02F4BF;
+  scale: .75;
+  
+}
+
+.checkbox>input:hover {
+  //border: 2px solid #34495E;
+  background-color: #02F4BF;
+}

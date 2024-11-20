@@ -48,26 +48,49 @@
                 required></textarea>
         </div>
 
-        @if (!message.valid && message.touched) {
+        <!-- @if (!message.valid && message.touched) {
         <span>Please enter a message</span>
         } @else if (!name.valid && name.touched) {
         <span>Please enter a Name</span>
         } @else if (!email.valid && email.touched) {
         <span>Please enter an Emailadress</span>
-        }
+    }-->
+
+        <div style="position: relative; border:1px solid black; display: flex; align-items: center">
+            <span style="padding: 16px; color: red; position: absolute; top: 0px">Your email is requ!</span>
+            <input style="border:none; outline:none; margin-top: 0px; margin-bottom: 0px;" type="text"
+                placeholder="test">
+            <img src="../../../assets/img/contact/icon-alert.svg">
+        </div>
 
         <div style="display:flex; justify-content: space-between;">
-            <div>
-                <input #checkbox ngModel type="checkbox" required>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <input #checkbox ngModel type="checkbox" required class="checkbox">
                 <!--box: {{checkbox.checked}}
                 form: {{contactForm.valid}}-->
-                <span>I've read the <a href="privacypolicy">privacy policy</a> and agree to the processing of
+                <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the
+                    processing of
                     my data as outlined.
                 </span>
             </div>
             <!-- <input type="submit" value="Send"> -->
             <button [disabled]="(!contactForm.valid)">Send</button>
         </div>
+
+
+        <label class="checkbox">
+
+
+
+            <input #checkbox ngModel type="checkbox" required class="checkbox">
+            <!--box: {{checkbox.checked}}
+        form: {{contactForm.valid}}-->
+            <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the processing
+                of
+                my data as outlined.
+            </span>
+        </label>
+
 
     </form>
 
