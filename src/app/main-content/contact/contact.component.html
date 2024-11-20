@@ -64,32 +64,25 @@
         </div>
 
         <div style="display:flex; justify-content: space-between;">
-            <div style="display: flex; gap: 10px; align-items: center;">
+
+            <label class="checkbox">
                 <input #checkbox ngModel type="checkbox" required class="checkbox">
                 <!--box: {{checkbox.checked}}
-                form: {{contactForm.valid}}-->
+            form: {{contactForm.valid}}-->
                 <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the
-                    processing of
-                    my data as outlined.
+                    processing
+                    of my data as outlined.
                 </span>
-            </div>
+            </label>
+
+            <!---->
+
             <!-- <input type="submit" value="Send"> -->
             <button [disabled]="(!contactForm.valid)">Send</button>
         </div>
 
 
-        <label class="checkbox">
 
-
-
-            <input #checkbox ngModel type="checkbox" required class="checkbox">
-            <!--box: {{checkbox.checked}}
-        form: {{contactForm.valid}}-->
-            <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the processing
-                of
-                my data as outlined.
-            </span>
-        </label>
 
 
     </form>

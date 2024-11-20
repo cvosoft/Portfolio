@@ -89,9 +89,15 @@ textarea:user-invalid {
 
 
 .checkbox {
-  display: inline-flex;
+  display: flex;
   cursor: pointer;
   position: relative;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .checkbox>span {
