@@ -9,8 +9,11 @@
         <div class="otherSide">
             <h3>{{item.name}}</h3>
             <span>{{item.skills}}</span>
-            
-            <span>{{item.text}}</span>
+
+            @if (translate.currentLang == "de")
+            {
+            <span>{{item.textde}}</span>} @else {
+            <span>{{item.text}}</span>}
             <div class="button-pair">
                 <a href="{{item.gitURL}}"><button class="secondary1">GitHub</button></a>
                 <a href="{{item.liveURL}}"><button class="primary1">Live Test</button></a>

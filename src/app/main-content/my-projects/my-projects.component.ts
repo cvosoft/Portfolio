@@ -12,7 +12,7 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class MyProjectsComponent {
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
     this.translate.use('de');
@@ -26,6 +26,7 @@ export class MyProjectsComponent {
       name: "Join",
       skills: "JavaScript | HTML | CSS | Firebase",
       text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      textde: "Übersetzung",
       img: "joinscreenshot.png",
       liveURL: "https://join.christophvoelker.com",
       gitURL: "https://github.com/cvosoft/Join",
@@ -34,6 +35,7 @@ export class MyProjectsComponent {
       name: "El Pollo Loco",
       skills: "JavaScript | HTML | CSS",
       text: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      textde: "Übersetzung",
       img: "pollolocoscreenshot.png",
       liveURL: "https://epl.christophvoelker.com",
       gitURL: "https://github.com/cvosoft/JumpNRun",
@@ -42,6 +44,7 @@ export class MyProjectsComponent {
       name: "DA Bubble",
       skills: "Angular | TypeScript | HTML | CSS",
       text: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      textde: "Übersetzung",
       img: "dabubblescreenshot.png",
       liveURL: "",
       gitURL: "",
