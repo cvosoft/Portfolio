@@ -78,8 +78,8 @@
                 <input [(ngModel)]="contactData.accepted" #name="ngModel" required type="checkbox" class="checkbox">
                 <!-- box: {{checkbox.checked}}
                 form: {{contactForm.valid}} -->
-                <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the
-                    processing of my data as outlined.
+                <!-- <span>{{'contact.privacy' | translate}} -->
+                <span [innerHTML]="'contact.privacy' | translate">
                 </span>
             </label>
 

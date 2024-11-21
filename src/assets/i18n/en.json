@@ -30,7 +30,8 @@
     },
     "contact": {
         "title": "Contact me",
-        "text": "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together."
+        "text": "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together.",
+        "privacy": "I've read the <a class='hover-fat' href='privacypolicy'>privacy policy</a> and agree to the processing of my data as outlined."
     },
     "footer": {
         "legal": "Legal notice",
