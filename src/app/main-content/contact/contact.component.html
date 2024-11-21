@@ -37,14 +37,14 @@
 
         <div class="above-form">
             <div style="flex:0.5">
-                <input #name="ngModel" (keyup)="checkEnableButton()" [(ngModel)]="contactData.name"
-                    title="Enter your name" type="text" id="name" name="name" placeholder="Your Name" required>
-                <input (keyup)="checkEnableButton()" #email="ngModel" [(ngModel)]="contactData.email"
-                    title="Enter your email adress" type="email" id="email" name="email" placeholder="Your Email"
+                <input #name="ngModel" [(ngModel)]="contactData.name" title="Enter your name" type="text" id="name"
+                    name="name" placeholder="Your Name" required>
+                <input #email="ngModel" [(ngModel)]="contactData.email" title="Enter your email adress" type="email"
+                    id="email" name="email" placeholder="Your Email"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             </div>
-            <textarea (keyup)="checkEnableButton()" style="flex:0.5" #message="ngModel" title="Enter your message"
-                minlength="4" [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
+            <textarea style="flex:0.5" #message="ngModel" title="Enter your message" minlength="4"
+                [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
                 required></textarea>
         </div>
 
@@ -56,29 +56,31 @@
         <span>Please enter an Emailadress</span>
     }-->
 
+        <!--
         <div style="position: relative; border:1px solid black; display: flex; align-items: center">
             <span style="padding: 16px; color: red; position: absolute; top: 0px">Your email is requ!</span>
             <input style="border:none; outline:none; margin-top: 0px; margin-bottom: 0px;" type="text"
                 placeholder="test">
             <img src="../../../assets/img/contact/icon-alert.svg">
         </div>
+    -->
+
 
         <div style="display:flex; justify-content: space-between;">
 
             <label class="checkbox">
-                <input #checkbox ngModel type="checkbox" required class="checkbox">
-                <!--box: {{checkbox.checked}}
-            form: {{contactForm.valid}}-->
+                <input required #checkbox ngModel type="checkbox" class="checkbox">
+                box: {{checkbox.checked}}
+                form: {{contactForm.valid}}
                 <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the
-                    processing
-                    of my data as outlined.
+                    processing of my data as outlined.
                 </span>
             </label>
 
             <!---->
 
             <!-- <input type="submit" value="Send"> -->
-            <button [disabled]="(!contactForm.valid)">Send</button>
+            <button type="submit" class="button secondary1" [disabled]="(!contactForm.valid)">Send</button>
         </div>
 
 

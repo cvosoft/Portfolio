@@ -126,7 +126,7 @@ label {
 }
 
 //.checkbox>input:checked+span::before {
-.checkbox>input:checked+span::before  {
+.checkbox>input:checked+span::before {
   content: '\2714';
   width: 18px;
   height: 18px;
@@ -139,10 +139,23 @@ label {
   top: 0x;
   background-color: #02F4BF;
   scale: .75;
-  
+
 }
 
 .checkbox>input:hover {
   //border: 2px solid #34495E;
   background-color: #02F4BF;
+}
+
+
+button:disabled,
+button[disabled] {
+
+
+  background-color: transparent;
+  border: 1px solid #827B7B;
+  color: #827B7B;
+  font-size: 18px;
+  font-weight: 500;
+
 }
