@@ -41,6 +41,21 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
+        @if (translate.currentLang == "de")
+        {
+        <div class="above-form">
+            <div style="flex:0.5">
+                <input #name="ngModel" [(ngModel)]="contactData.name" title="Gib Deinen Namen an" type="text" id="name"
+                    name="name" placeholder="Dein Name" required>
+                <input #email="ngModel" [(ngModel)]="contactData.email" title="Gib Deine Mailadresse an" type="email"
+                    id="email" name="email" placeholder="Deine Email"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            </div>
+            <textarea style="flex:0.5" #message="ngModel" title="Gib Deine Nachricht ein" minlength="4"
+                [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Deine Nachricht"
+                required></textarea>
+        </div>
+        } @else {
         <div class="above-form">
             <div style="flex:0.5">
                 <input #name="ngModel" [(ngModel)]="contactData.name" title="Enter your name" type="text" id="name"
@@ -53,6 +68,8 @@
                 [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
                 required></textarea>
         </div>
+        }
+
 
         <!-- @if (!message.valid && message.touched) {
         <span>Please enter a message</span>

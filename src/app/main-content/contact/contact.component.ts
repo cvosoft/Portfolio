@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,13 @@ import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  constructor(public translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+    //console.log(this.translate.currentLang);
+  }
 
   disabledVariable = true;
 
