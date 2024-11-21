@@ -10,11 +10,17 @@
             {{'contact.text' | translate}}
         </span>
         <div style="flex:.5; display: flex; justify-content: space-between;">
-            <div class="flex-align-center">
+            <div class="flex-align-center mail">
 
-                <img src="../../../assets/img/contact/email.svg">
-                <span class>
-                    E-mail: <a href="mailto:contact@christophvoelker.com">contact(at)christophvoelker.com</a>
+
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="#E15544" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.665 5H4.73296C3.43138 5 2.37829 6.125 2.37829 7.5L2.36646 22.5C2.36646 23.875 3.43138 25 4.73296 25H23.665C24.9666 25 26.0315 23.875 26.0315 22.5V7.5C26.0315 6.125 24.9666 5 23.665 5ZM23.1917 10.3125L14.8261 15.8375C14.4475 16.0875 13.9505 16.0875 13.5719 15.8375L5.20626 10.3125C4.91045 10.1125 4.73296 9.775 4.73296 9.4125C4.73296 8.575 5.59673 8.075 6.27119 8.5125L14.199 13.75L22.1268 8.5125C22.8012 8.075 23.665 8.575 23.665 9.4125C23.665 9.775 23.4875 10.1125 23.1917 10.3125Z" />
+                </svg>
+
+                <span>
+                    E-mail: <a style="color: #02F4BF"
+                        href="mailto:contact@christophvoelker.com">contact(at)christophvoelker.com</a>
                 </span>
             </div>
 
@@ -69,9 +75,9 @@
         <div style="display:flex; justify-content: space-between;">
 
             <label class="checkbox">
-                <input required #checkbox ngModel type="checkbox" class="checkbox">
-                box: {{checkbox.checked}}
-                form: {{contactForm.valid}}
+                <input [(ngModel)]="contactData.accepted" #name="ngModel" required type="checkbox" class="checkbox">
+                <!-- box: {{checkbox.checked}}
+                form: {{contactForm.valid}} -->
                 <span>I've read the <a class="hover-fat" href="privacypolicy">privacy policy</a> and agree to the
                     processing of my data as outlined.
                 </span>

@@ -33,6 +33,7 @@ export class ContactComponent {
     name: "",
     email: "",
     message: "",
+    accepted: ""
   };
 
 
