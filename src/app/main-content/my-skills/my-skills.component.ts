@@ -51,7 +51,7 @@ export class MySkillsComponent {
       img: "scrum.svg"
     },
     {
-      name: "Material Design",
+      name: "Material<br>design",
       img: "matdes.svg"
     },
     {

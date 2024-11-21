@@ -10,16 +10,16 @@
 
         <div class="singleSkill">
             <img src="../../../assets/img/skills/{{item.img}}">
-            <span>{{item.name}}</span>
+            <span style="text-align: center;" [innerHTML]="item.name"></span>
         </div>
         } @else {
         <div class="challengeSkill">
-            <div class="singleSkill" (mouseenter)="challengeHover=true;" (mouseleave)="challengeHover=false;" style="gap:10px">
+            <div class="singleSkill" (mouseenter)="challengeHover=true;" (mouseleave)="challengeHover=false;">
                 <img src="../../../assets/img/skills/{{item.img}}">
                 <!-- <span>{{item.name}}</span> -->
                 <span>{{'skills.challenge-title' | translate}}</span>
             </div>
-            <span [ngClass]="{'d-none': !challengeHover}">
+            <span style="width: 250px;" [ngClass]="{'d-none': !challengeHover}">
                 {{'skills.challenge-text' | translate}}
             </span>
         </div>
