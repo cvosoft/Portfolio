@@ -83,17 +83,18 @@ input[type=submit] {
 }
 
 
-input[type=text]:user-invalid {
-  border: 2px dotted red;
-}
 
-input[type=email]:user-invalid {
-  border: 2px dotted red;
-}
+// input[type=text]:user-invalid {
+//   border: 2px dotted red;
+// }
 
-textarea:user-invalid {
-  border: 2px dotted red;
-}
+// input[type=email]:user-invalid {
+//   border: 2px dotted red;
+// }
+
+// textarea:user-invalid {
+//   border: 2px dotted red;
+// }
 
 
 .hover-fat:hover {
