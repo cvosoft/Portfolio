@@ -31,7 +31,7 @@
     "contact": {
         "title": "Kontakt",
         "text": "Immer noch unsicher, ob ich die richtige Person für Ihr Projekt bin? Kontaktieren Sie mich, damit ich Sie überzeugen kann.",
-        "privacy": "Ich habe die Datenschutzerklärung gelesen und stimme dem Verarbeiten meiner Daten zu."        
+        "privacy": "Ich habe die <a class='hover-fat' href='privacypolicy'>Datenschutzerklärung</a> gelesen und stimme dem Verarbeiten meiner Daten zu."        
     },
     "footer": {
         "legal": "Impressum",
