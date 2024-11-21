@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-my-projects',
@@ -10,6 +11,15 @@ import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
   styleUrl: './my-projects.component.scss'
 })
 export class MyProjectsComponent {
+
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+    //console.log(this.translate.currentLang);
+  }
+
+
 
   projectsList = [
     {
