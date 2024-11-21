@@ -14,12 +14,13 @@
         </div>
         } @else {
         <div class="challengeSkill">
-            <div (mouseenter)="challengeHover=true;" (mouseleave)="challengeHover=false;" style="gap:10px">
+            <div class="singleSkill" (mouseenter)="challengeHover=true;" (mouseleave)="challengeHover=false;" style="gap:10px">
                 <img src="../../../assets/img/skills/{{item.img}}">
-                <span>{{item.name}}</span>
+                <!-- <span>{{item.name}}</span> -->
+                <span>{{'skills.challenge-title' | translate}}</span>
             </div>
             <span [ngClass]="{'d-none': !challengeHover}">
-                I am always happy to learn new technologies, just tell me what you need.
+                {{'skills.challenge-text' | translate}}
             </span>
         </div>
         }

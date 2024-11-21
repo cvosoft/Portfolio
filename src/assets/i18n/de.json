@@ -6,18 +6,21 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "FRONTEND ENTWICKLER"
+        "title": "FRONTEND ENTWICKLER",
+        "buttontext": "KONTAKT"
     },
     "whyme": {
         "headline": "Über mich",
-        "text": "Ich bin total motiviert!",
+        "text": "Es macht mir Freude, mich in komplizierte technische Probleme reinzufuchsen und diese dann zu lösen. Dabei lerne ich gerne auch neue Methoden und Programmiersprachen dazu und entwickle mich so weiter. Meine Motivation durch Code Probleme zu lösen machen mich zu einem wertvollen Mitglied jedes Teams.",
         "block1": "Ich",
         "location": "wohne<br>in Lübeck",
         "remote": "kann 'remote'<br>arbeiten",
-        "button": "Kontaktieren"
+        "button": "Kontakt"
     },
     "skills": {
-        "title": "Fähigkeiten"
+        "title": "Fähigkeiten",
+        "challenge-title": "Etwas Neues?",
+        "challenge-text": "Ich lerne gerne Neues dazu, was soll ich beherrschen?"
     },
     "projects": {
         "title": "Projekte"
@@ -26,9 +29,8 @@
         "title": "Kontakt",
         "text": "Immer noch unsicher?"
     },
-    "footer":
-    {
-        "legal":"Impressum",
+    "footer": {
+        "legal": "Impressum",
         "privacy": "Datenschutzerklärung",
         "logotext": "frontend entwickler"
     }

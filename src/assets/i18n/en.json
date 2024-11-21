@@ -6,7 +6,8 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "FRONTEND DEVELOPER"
+        "title": "FRONTEND DEVELOPER",
+        "buttontext": "CONTACT ME"
     },
     "whyme": {
         "headline": "Why me",
@@ -17,7 +18,9 @@
         "button": "Let's talk"
     },
     "skills": {
-        "title": "My Skills"
+        "title": "My Skills",
+        "challenge-title": "Challenge Me",
+        "challenge-text": "I am always happy to learn new technologies, just tell me what you need."
     },
     "projects": {
         "title": "My Projects"
