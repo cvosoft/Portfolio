@@ -26,7 +26,7 @@ export class MyProjectsComponent {
       name: "Join",
       skills: "JavaScript | HTML | CSS | Firebase",
       text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      textde: "Übersetzung",
+      textde: "Ein Kanban-Taskmanager: Erstelle und organisiere Aufgaben mithilfe von Drag & Drop, weise den Aufgaben Benutzer und Kategorien zu.",
       img: "joinscreenshot.png",
       liveURL: "https://join.christophvoelker.com",
       gitURL: "https://github.com/cvosoft/Join",
@@ -34,8 +34,8 @@ export class MyProjectsComponent {
     {
       name: "El Pollo Loco",
       skills: "JavaScript | HTML | CSS",
+      textde: "Ein Jump&Run programmiert mithilfe eines objektorientierten Ansatzes: Hilf Pepe dabei, Münzen und Salsaflaschen zu finden, um die Endgegner zu besiegen.",
       text: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      textde: "Übersetzung",
       img: "pollolocoscreenshot.png",
       liveURL: "https://epl.christophvoelker.com",
       gitURL: "https://github.com/cvosoft/JumpNRun",
@@ -43,8 +43,8 @@ export class MyProjectsComponent {
     {
       name: "DA Bubble",
       skills: "Angular | TypeScript | HTML | CSS",
+      textde: "Diese App ist ein 'Slack'-Clone: Durch die intuitive Bedienung und Echtzeit-Nachrichten revolutioniert es die Kommunikation und Zusammenarbeit in Gruppen.",
       text: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      textde: "Übersetzung",
       img: "dabubblescreenshot.png",
       liveURL: "",
       gitURL: "",
