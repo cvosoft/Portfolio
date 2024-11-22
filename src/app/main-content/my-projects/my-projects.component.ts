@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
@@ -19,7 +19,7 @@ export class MyProjectsComponent {
     //console.log(this.translate.currentLang);
   }
 
-
+ 
 
   projectsList = [
     {

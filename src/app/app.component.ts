@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./main-content/hero-section/nav-bar/nav-bar.component";
 import { HeroSectionComponent } from "./main-content/hero-section/hero-section.component";
@@ -32,9 +32,7 @@ export class AppComponent implements OnInit {
     //AOS.init();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     AOS.init();
   }
-
-
 }
