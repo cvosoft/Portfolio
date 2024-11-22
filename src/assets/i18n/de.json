@@ -37,5 +37,8 @@
         "legal": "Impressum",
         "privacy": "Datenschutzerklärung",
         "logotext": "frontend entwickler"
+    },
+    "legal":{
+        "accordingto":"Angaben gemäß § 5 TMG"
     }
 }

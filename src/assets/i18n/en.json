@@ -37,5 +37,8 @@
         "legal": "Legal notice",
         "privacy": "privacy policy",
         "logotext": "frontend developer"
+    },
+    "legal":{
+        "accordingto":"Information according to § 5 TMG"
     }
 }
