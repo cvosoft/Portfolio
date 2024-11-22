@@ -17,6 +17,7 @@ export class WhyMeComponent {
     //this.translate.addLangs(['de', 'en']);
     //this.translate.setDefaultLang('de');
     //this.translate.use('de');
+    AOS.init();
   }
 
   ngOnInit() {
