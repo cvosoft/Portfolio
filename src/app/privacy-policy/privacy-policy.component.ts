@@ -13,10 +13,7 @@ import { TranslateService } from "@ngx-translate/core";
 export class PrivacyPolicyComponent {
 
   constructor(public translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
-    //console.log(this.translate.currentLang);
+
   }
 
 }
