@@ -28,7 +28,13 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
-    this.translate.use('de');
+    //this.translate.use('de');
+
+    // ist was im storage?
+    let lang = localStorage.getItem("lang");
+    if (lang == null) { lang = 'de' };
+    this.translate.use(lang);
+
     AOS.init();
 
   }

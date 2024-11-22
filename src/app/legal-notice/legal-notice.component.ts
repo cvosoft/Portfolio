@@ -6,16 +6,16 @@ import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-legal-notice',
   standalone: true,
-  imports: [NavBarComponent,TranslateModule],
+  imports: [NavBarComponent, TranslateModule],
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
 })
 export class LegalNoticeComponent {
 
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
+
+
+
   }
 
 

@@ -14,11 +14,7 @@ import { TranslateService } from "@ngx-translate/core";
 export class NavBarComponent {
 
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
 
-    //console.log(this.translate.currentLang);
   }
 
   getLanguage1() {
@@ -43,6 +39,8 @@ export class NavBarComponent {
 
 
   useLanguage(language: string): void {
+    //write language to local storage
+    localStorage.setItem("lang", language);
     this.translate.use(language);
   }
 
