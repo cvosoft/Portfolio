@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./main-content/hero-section/nav-bar/nav-bar.component";
@@ -21,7 +21,7 @@ import AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
 
 
@@ -30,7 +30,6 @@ export class AppComponent {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
     //AOS.init();
-    AOS.init();
   }
 
   ngOnInit() {

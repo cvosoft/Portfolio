@@ -6,7 +6,7 @@ import { ReferencesComponent } from "./references/references.component";
 import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
 import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
-import AOS from 'aos';
+
 
 @Component({
   selector: 'app-main-content',
@@ -15,13 +15,11 @@ import AOS from 'aos';
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
-export class MainContentComponent implements OnInit {
+export class MainContentComponent {
 
   constructor() { }
 
 
-  ngOnInit() {
-    AOS.init();
-  }
+
 
 }
