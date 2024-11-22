@@ -30,7 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/scrollbar.scss",
+              "src/buttons.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           },
@@ -96,9 +99,7 @@
               "src/buttons.scss",
               "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [
-              "node_modules/aos/dist/aos.js"
-            ]
+            "scripts": []
           }
         }
       }

@@ -21,7 +21,7 @@ import AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'portfolio';
 
 
@@ -29,10 +29,7 @@ export class AppComponent implements OnInit {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
     this.translate.use('de');
-    //AOS.init();
-  }
-
-  ngOnInit(): void {
     AOS.init();
+
   }
 }
