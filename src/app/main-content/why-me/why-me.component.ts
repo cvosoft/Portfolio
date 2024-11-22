@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IAmContainerComponent } from "../why-me/i-am-container/i-am-container.component";
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
+import AOS from 'aos';
 
 @Component({
   selector: 'app-why-me',
@@ -18,7 +19,9 @@ export class WhyMeComponent {
     //this.translate.use('de');
   }
 
-
+  ngOnInit() {
+    AOS.init();
+  }
 
 
 }

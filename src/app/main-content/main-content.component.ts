@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeroSectionComponent } from "./hero-section/hero-section.component";
 import { ContactComponent } from "./contact/contact.component";
 import { WhyMeComponent } from "./why-me/why-me.component";
@@ -6,6 +6,7 @@ import { ReferencesComponent } from "./references/references.component";
 import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
 import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
+import AOS from 'aos';
 
 @Component({
   selector: 'app-main-content',
@@ -14,6 +15,13 @@ import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
-export class MainContentComponent {
+export class MainContentComponent implements OnInit {
+
+  constructor() { }
+
+
+  ngOnInit() {
+    AOS.init();
+  }
 
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
+import AOS from 'aos';
 
 @Component({
   selector: 'app-i-am-container',
@@ -20,5 +21,9 @@ export class IAmContainerComponent {
   toggler: boolean = true;
 
   workIconHover: boolean = false;
+
+  ngOnInit() {
+    AOS.init();
+  }
 
 }

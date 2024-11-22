@@ -93,7 +93,8 @@
               "src/styles.scss",
               "src/reset.scss",
               "src/scrollbar.scss",
-              "src/buttons.scss"
+              "src/buttons.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           }
