@@ -48,6 +48,7 @@
         "NameReq": "Bitte Namen angeben!",
         "EmailReq": "Bitte gültige Emailadresse!",
         "MessageReq": "Bitte Nachricht eingeben!",
-        "CheckboxReq": "Bitte Datenschutzerklärung akzeptieren!"        
+        "CheckboxReq": "Bitte Datenschutzerklärung akzeptieren!",
+        "sentSucesss": "Nachricht versendet!"
     }
 }

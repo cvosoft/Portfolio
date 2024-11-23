@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { CommonModule} from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
@@ -7,7 +8,7 @@ import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss'
 })
@@ -43,13 +44,18 @@ export class FormComponent {
     },
   };
 
+  showSuccess = false;
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.showSuccess = true;
             ngForm.resetForm();
+            setTimeout(() => {
+              this.showSuccess = false;
+            }, 6000);
           },
           error: (error) => {
             console.error(error);
