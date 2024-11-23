@@ -57,3 +57,37 @@ h2 {
         color: #02F4BF;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .whyme-arrow {
+        display: none;
+
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .middle {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        
+
+        img {
+            height: 370px;
+        }
+    }
+
+}

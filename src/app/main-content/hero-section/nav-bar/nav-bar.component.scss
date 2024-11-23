@@ -31,3 +31,18 @@ nav {
         gap: 6px;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        .nav-elements {
+            display: none;
+        }
+
+        .languageSelector {
+            display: none;
+        }
+    }
+
+}

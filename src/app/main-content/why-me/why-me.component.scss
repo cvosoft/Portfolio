@@ -21,3 +21,22 @@ section {
     }
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 32px;
+    }
+
+    section {
+        .left {
+            display: none;
+        }
+
+        .right {
+            flex: 1;
+        }
+    }
+
+}
