@@ -58,15 +58,26 @@
         } @else {
         <div class="above-form">
             <div style="flex:0.5">
-                <input #name="ngModel" [(ngModel)]="contactData.name" title="Enter your name" type="text" id="name"
-                    name="name" placeholder="Your Name" required>
+                <div>
+                    <input #name="ngModel" [(ngModel)]="contactData.name" title="Enter your name" type="text" id="name"
+                        name="name" placeholder="Your Name" required>
+                </div>
                 <input #email="ngModel" [(ngModel)]="contactData.email" title="Enter your email adress" type="email"
                     id="email" name="email" placeholder="Your Email"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             </div>
-            <textarea style="flex:0.5" #message="ngModel" title="Enter your message" minlength="4"
-                [(ngModel)]="contactData.message" id="message" name="subject" placeholder="Your Message"
-                required></textarea>
+
+            <div style="flex:0.5; position: relative; display:flex">
+                @if (!message.valid && message.touched) {
+                <span style="padding: 16px; font-size: 12px; position: absolute; bottom:10px;color: red;">Your message
+                    is
+                    required!</span>
+                }
+                <textarea #message="ngModel" title="Enter your message" minlength="4" [(ngModel)]="contactData.message"
+                    id="message" name="subject" placeholder="Your Message" required></textarea>
+            </div>
+
+
         </div>
         }
 
@@ -100,7 +111,6 @@
                 </span>
             </label>
 
-            <!---->
 
             <!-- <input type="submit" value="Send"> -->
             <button type="submit" class="button secondary1" [disabled]="(!contactForm.valid)">Send</button>
