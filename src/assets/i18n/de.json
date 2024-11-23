@@ -38,7 +38,15 @@
         "privacy": "Datenschutzerklärung",
         "logotext": "frontend entwickler"
     },
-    "legal":{
-        "accordingto":"Angaben gemäß § 5 TMG"
+    "legal": {
+        "accordingto": "Angaben gemäß § 5 TMG"
+    },
+    "contactform": {
+        "placeholderName": "Dein Name",
+        "placeholderEmail": "Deine Email",
+        "placeholderMessage": "Deine Nachricht",
+        "NameReq": "Bitte Namen angeben!",
+        "EmailReq": "Bitte gültige Emailadresse!",
+        "MessageReq": "Bitte Nachricht eingeben!"
     }
 }

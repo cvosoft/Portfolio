@@ -40,5 +40,13 @@
     },
     "legal":{
         "accordingto":"Information according to § 5 TMG"
+    },
+    "contactform":{
+        "placeholderName" :"Enter your name",
+        "placeholderEmail" :"Enter your Email",
+        "placeholderMessage" :"Enter your Message",
+        "NameReq" :"Your name is required!",
+        "EmailReq" :"Your Email is required!",
+        "MessageReq" :"Your Message is required!"        
     }
 }
