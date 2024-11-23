@@ -47,6 +47,7 @@
         "placeholderMessage": "Deine Nachricht",
         "NameReq": "Bitte Namen angeben!",
         "EmailReq": "Bitte gültige Emailadresse!",
-        "MessageReq": "Bitte Nachricht eingeben!"
+        "MessageReq": "Bitte Nachricht eingeben!",
+        "CheckboxReq": "Bitte Datenschutzerklärung akzeptieren!"        
     }
 }

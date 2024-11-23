@@ -47,6 +47,7 @@
         "placeholderMessage" :"Enter your Message",
         "NameReq" :"Your name is required!",
         "EmailReq" :"Your Email is required!",
-        "MessageReq" :"Your Message is required!"        
+        "MessageReq" :"Your Message is required!",        
+        "CheckboxReq": "Please accept the privacy policy!"
     }
 }

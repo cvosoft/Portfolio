@@ -4,16 +4,18 @@
         <div style="flex:0.5">
 
             <div style="position: relative;">
-                <input #name="ngModel" [(ngModel)]="contactData.name" title="{{'contactform.placeholderName' | translate}}" type="text" id="name"
-                    name="name" placeholder="{{'contactform.placeholderName' | translate}}" required>
+                <input #name="ngModel" [(ngModel)]="contactData.name"
+                    title="{{'contactform.placeholderName' | translate}}" type="text" id="name" name="name"
+                    placeholder="{{'contactform.placeholderName' | translate}}" required>
                 @if (!name.valid && name.touched) {
                 <span style="right: 0; padding: 16px; font-size: 12px; position: absolute; color: red;">
                     {{'contactform.NameReq' | translate}}</span>}
             </div>
 
             <div style="position: relative;">
-                <input #email="ngModel" [(ngModel)]="contactData.email" title="{{'contactform.placeholderEmail' | translate}}" type="email"
-                    id="email" name="email" placeholder="{{'contactform.placeholderEmail' | translate}}"
+                <input #email="ngModel" [(ngModel)]="contactData.email"
+                    title="{{'contactform.placeholderEmail' | translate}}" type="email" id="email" name="email"
+                    placeholder="{{'contactform.placeholderEmail' | translate}}"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
                 @if (!email.valid && email.touched) {
                 <span style="right: 0; padding: 16px; font-size: 12px; position: absolute; color: red;">
@@ -26,23 +28,27 @@
             <span style="padding: 16px; font-size: 12px; position: absolute; bottom:10px;color: red;">
                 {{'contactform.MessageReq' | translate}}</span>
             }
-            <textarea #message="ngModel" title="{{'contactform.placeholderMessage' | translate}}" minlength="4" [(ngModel)]="contactData.message"
-                id="message" name="subject" placeholder="{{'contactform.placeholderMessage' | translate}}"
-                required></textarea>
+            <textarea #message="ngModel" title="{{'contactform.placeholderMessage' | translate}}" minlength="4"
+                [(ngModel)]="contactData.message" id="message" name="subject"
+                placeholder="{{'contactform.placeholderMessage' | translate}}" required></textarea>
         </div>
 
 
     </div>
 
 
-    <div style="display:flex; justify-content: space-between;">
+    <div style="position: relative; display:flex; justify-content: space-between;">
         <label class="checkbox">
-            <input [(ngModel)]="contactData.accepted" name="checkbox" required type="checkbox" class="checkbox">
+            <input [(ngModel)]="contactData.accepted" #checkbox name="checkbox" required type="checkbox"
+                class="checkbox">
             <span [innerHTML]="'contact.privacy' | translate">
             </span>
         </label>
 
         <button type="submit" class="button secondary1" [disabled]="(!contactForm.valid)">Send</button>
+        @if (!checkbox.checked && message.valid && email.valid && name.valid) {
+            <span style="padding-left: 16px; font-size: 12px; color: red; position: absolute; bottom: 0">{{'contactform.CheckboxReq' | translate}}</span>}
     </div>
+
 
 </form>

@@ -68,7 +68,7 @@ textarea:user-invalid {
 
 label {
   display: flex;
-  align-items: center;
+  align-items: top;
   gap: 8px;
 }
 
@@ -78,8 +78,8 @@ label {
 }
 
 .checkbox>input {
-  height: 18px;
-  width: 18px;
+  height: 18px !important;
+  width: 18px !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
