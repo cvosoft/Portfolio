@@ -1,17 +1,19 @@
-<nav>
-    <div>
-        <app-logo></app-logo>
-        <div class="nav-elements">
-            <a href="#whyme">{{'menu.why' | translate}}</a>
-            <a href="#skills">{{'menu.skills' | translate}}</a>
-            <a href="#projects">{{'menu.projects' | translate}}</a>
-            <a href="#contact">{{'menu.contact' | translate}}</a>
+<div class="sectionNav">
+    <nav>
+        <div>
+            <app-logo></app-logo>
+            <div class="nav-elements">
+                <a href="#whyme">{{'menu.why' | translate}}</a>
+                <a href="#skills">{{'menu.skills' | translate}}</a>
+                <a href="#projects">{{'menu.projects' | translate}}</a>
+                <a href="#contact">{{'menu.contact' | translate}}</a>
+            </div>
         </div>
-    </div>
 
-    <div class="languageSelector">
-        <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
-        |
-        <a [ngStyle]="{'color': getLanguage2()}" (click)="useLanguage('en')">EN</a>
-    </div>
-</nav>
+        <div class="languageSelector">
+            <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
+            |
+            <a [ngStyle]="{'color': getLanguage2()}" (click)="useLanguage('en')">EN</a>
+        </div>
+    </nav>
+</div>

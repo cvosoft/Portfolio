@@ -13,7 +13,7 @@ h2 {
 .singleProject {
     display: flex;
     //flex-direction: row-reverse;
-    max-width: 1178px;
+    //max-width: 1178px;
     gap: 40px;
     margin-bottom: 50px;
 
@@ -44,4 +44,12 @@ h2 {
 
 .reverse {
     flex-direction: row-reverse;
+
+    .otherSide {
+        text-align: right;
+
+        .button-pair {
+            justify-content: flex-end;
+        }
+    }
 }

@@ -1,8 +1,13 @@
+
+
 .skillContainer {
     display: flex;
-    gap: 100px;
+    //grid-template-rows: 3;
+    gap: 150px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    //max-width: 1200px;
+
+
 
     .singleSkill {
         width: 88px;
