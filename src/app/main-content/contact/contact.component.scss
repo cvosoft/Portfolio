@@ -42,3 +42,27 @@ a {
 }
 
 
+
+@media only screen and (max-width: 1060px) {
+  .contact-headline {
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .above-form {
+
+    display: none;
+
+    span {
+      display: none;
+    }
+  }
+
+}

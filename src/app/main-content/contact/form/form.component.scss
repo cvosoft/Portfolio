@@ -132,3 +132,29 @@ button[disabled] {
     font-size: 18px;
     font-weight: 500;
 }
+
+
+@media only screen and (max-width: 1060px) {
+
+    form {
+        div {
+            flex-direction: column;
+            //align-items: center;
+            gap: 0px !important;
+        }
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .checkbox {
+        align-items: center;
+
+        button {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
