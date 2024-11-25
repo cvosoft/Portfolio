@@ -17,13 +17,14 @@
 
     <img style="cursor: pointer;" (click)="toggleMenu()" src="../../../../assets/img/nav/burger1.svg">
 
-    <div style="padding: 30px 50px; background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%); top:0; left:0; width:100%; border: 1px solid red; justify-content:center;position: fixed; display: flex; flex-direction: column;"
+    <div style="padding: 30px 50px; background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%); top:0; left:0; width:100%; justify-content:center;position: fixed; display: flex; flex-direction: column;"
         [ngClass]="{'d-none':showMenu}">
-        <img style="align-self: flex-end; cursor: pointer;" (click)="toggleMenu()" src="../../../../assets/img/nav/burger2.svg">
-        <a href="#whyme">{{'menu.why' | translate}}</a>
-        <a href="#skills">{{'menu.skills' | translate}}</a>
-        <a href="#projects">{{'menu.projects' | translate}}</a>
-        <a href="#contact">{{'menu.contact' | translate}}</a>
+        <img style="align-self: flex-end; cursor: pointer;" (click)="toggleMenu()"
+            src="../../../../assets/img/nav/burger2.svg">
+        <a (click)="toggleMenu()" href="#whyme">{{'menu.why' | translate}}</a>
+        <a (click)="toggleMenu()" href="#skills">{{'menu.skills' | translate}}</a>
+        <a (click)="toggleMenu()" href="#projects">{{'menu.projects' | translate}}</a>
+        <a (click)="toggleMenu()" href="#contact">{{'menu.contact' | translate}}</a>
         <div style="gap: 6px">
             <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
             |
