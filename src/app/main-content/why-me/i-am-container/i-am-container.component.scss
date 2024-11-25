@@ -1,5 +1,5 @@
 .grid-container {
-    margin-top:20px;
+    margin-top: 20px;
     display: grid;
     //width: auto;
     //border: 3px solid black;
@@ -67,7 +67,7 @@
     height: 56px; // 48
     background-repeat: no-repeat;
     margin-bottom: 5px;
-    
+
     &:hover {
         background: url("../../../../assets/img/IconRemote2.svg");
         background-position: -8px -8px;
@@ -105,6 +105,48 @@
 
     to {
         transform: translateY(-3px);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1060px) {
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+
+        a,
+        img {
+            align-self: center;
+        }
+
+        a {
+            margin-top: 25px;
+        }
+
+        .el-2-2,
+        .el-3-3 {
+            display: none;
+        }
+
+    }
+
+    .loc-icon:hover {
+        animation: none;
+    }
+
+    .elipse {
+        display: none;
+    }
+
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 700;
     }
 
 }

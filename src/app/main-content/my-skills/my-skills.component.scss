@@ -1,16 +1,16 @@
-
-
 .skillContainer {
-    display: flex;
+    display: grid;
     //grid-template-rows: 3;
-    gap: 150px;
-    flex-wrap: wrap;
+    //gap: 150px;
+    //flex-wrap: wrap;
     //max-width: 1200px;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 5rem;
 
 
 
     .singleSkill {
-        width: 88px;
+        //width: 88px;
         max-height: 120px;
         display: flex;
         flex-direction: column;
@@ -25,10 +25,11 @@
     }
 
     .challengeSkill {
-        display: flex;
-        width: 384px;
-        flex-direction: row;
-        gap: 35px;
+        //display: flex;
+        //grid-column-start: span 2;
+        //width: 384px;
+        //flex-direction: row;
+        //gap: 35px;
 
 
         span {
@@ -41,6 +42,39 @@
             font-weight: 700;
         }
 
+    }
+
+}
+
+
+@media only screen and (max-width: 1060px) {
+
+
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .skillContainer {
+        grid-template-columns: repeat(3, 1fr);
+
+        span {
+            display: none;
+        }
+
+    }
+
+
+    .singleSkill {
+        img {
+            height: 45px !important;
+            width: auto;
+        }
+
+        span {
+            display: none !important;
+        }
     }
 
 }

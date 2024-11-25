@@ -19,10 +19,10 @@
                 <!-- <span>{{item.name}}</span> -->
                 <span>{{'skills.challenge-title' | translate}}</span>
             </div>
-            <span style="width: 250px;" [ngClass]="{'d-none': !challengeHover}">
-                {{'skills.challenge-text' | translate}}
-            </span>
         </div>
+        <span [ngClass]="{'d-none': !challengeHover}">
+            {{'skills.challenge-text' | translate}}
+        </span>
         }
         }
 
