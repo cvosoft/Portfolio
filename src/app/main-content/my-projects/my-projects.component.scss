@@ -53,3 +53,21 @@ h2 {
         }
     }
 }
+
+
+@media only screen and (max-width: 1060px) {
+.singleProject {
+    flex-direction: column;
+    align-items: center;
+
+    .otherSide{
+        text-align: center;
+
+        .button-pair {
+        justify-content: center;
+        }
+
+    }
+}
+
+}

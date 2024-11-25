@@ -23,6 +23,9 @@
 
 
 body {
+
+    overflow-x: hidden;
+
     font-family: 'robotomono', sans-serif;
     background: linear-gradient(174.25deg, #0B042D 24.9%, #1F0B80 39.2%, #0B042F 72.02%, #241085 106.54%);
     display: flex;
@@ -35,6 +38,7 @@ body {
 
     section {
         margin-top: 100px;
+        //border: 1px solid green;
     }
 
 

@@ -13,6 +13,7 @@ nav {
         display: flex;
         align-items: center;
         gap: 48px;
+        
         font-weight: 500;
         font-size: 22px;
     }
@@ -31,7 +32,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1060px) {
 
     nav {
         .nav-elements {

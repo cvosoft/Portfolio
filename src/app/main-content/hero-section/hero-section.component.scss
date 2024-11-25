@@ -1,35 +1,9 @@
 section {
-    margin-top: 92px;
-    //height: calc(100vh - 92px); // minus nav height 
-}
-
-h1 {
-    font-size: 64px;
-    font-weight: 500;
-}
-
-h2 {
-    font-size: 82px;
-    font-weight: 700;
-}
-
-.middle {
-    //position: relative;
-    display: flex;
-    //align-items: end;
-    justify-content: space-around;
-
-    img {
-        height: 600px;
-        width: auto;
-        //object-fit: cover;
-        //object-position: 0% 0%;
-    }
+    max-height: 100vh; // minus nav height 
+    margin-top: 20px;
+    position: relative;
 
     svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         width: 38px;
         height: 68px;
         padding: 7px;
@@ -40,6 +14,33 @@ h2 {
         padding: 6px;
         border: 1px solid #02F4BF;
     }
+
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 82px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.middle {
+    //position: relative;
+    display: flex;
+    //align-items: end;
+    justify-content: space-between;
+
+    img {
+        height: 600px;
+        width: auto;
+        //object-fit: cover;
+        //object-position: 0% 0%;
+    }
+
 
     span {
         display: inline-block;
@@ -59,7 +60,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1060px) {
     h1 {
         font-weight: 700;
         font-size: 24px;
@@ -83,7 +84,7 @@ h2 {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
-        
+
 
         img {
             height: 370px;
