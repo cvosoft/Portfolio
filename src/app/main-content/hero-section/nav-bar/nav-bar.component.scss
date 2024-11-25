@@ -13,7 +13,7 @@ nav {
         display: flex;
         align-items: center;
         gap: 48px;
-        
+
         font-weight: 500;
         font-size: 22px;
     }
@@ -29,6 +29,10 @@ nav {
     .languageSelector {
         gap: 6px;
     }
+}
+
+.d-none {
+    display: none;
 }
 
 

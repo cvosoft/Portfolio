@@ -13,6 +13,13 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class NavBarComponent {
 
+  showMenu = false;
+
+  toggleMenu() {
+    if (this.showMenu == false) { this.showMenu = true;console.log("sdg");
+     } else { this.showMenu = false }
+  }
+
   constructor(private translate: TranslateService) {
 
   }
@@ -43,6 +50,9 @@ export class NavBarComponent {
     localStorage.setItem("lang", language);
     this.translate.use(language);
   }
+
+
+
 
 
 }
