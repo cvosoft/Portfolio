@@ -53,3 +53,50 @@ svg:hover {
         fill: #02F4BF;
     }
 }
+
+
+
+@media only screen and (max-width: 1060px) {
+
+    footer {
+        flex-direction: column-reverse;
+
+        .footer-links {
+            order: 3;
+            //flex-direction: column;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .footer-middle {
+            order: 0;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+        }
+
+        .footer-middle-lower {
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .footer-middle-upper {
+            margin-bottom: 30px;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+        }
+
+
+        .footer-logo {
+            margin-bottom: 8px;
+            order: 1;
+
+            span {
+                display: none;
+            }
+
+        }
+
+    }
+
+}
