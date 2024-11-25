@@ -16,12 +16,13 @@ export class NavBarComponent {
   showMenu = false;
 
   toggleMenu() {
-    if (this.showMenu == false) { this.showMenu = true;console.log("sdg");
-     } else { this.showMenu = false }
+    if (this.showMenu == false) {
+      this.showMenu = true; console.log("sdg");
+    } else { this.showMenu = false }
   }
 
   constructor(private translate: TranslateService) {
-
+    this.showMenu = false;
   }
 
   getLanguage1() {

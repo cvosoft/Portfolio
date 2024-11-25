@@ -9,6 +9,11 @@ nav {
     height: 92px;
     background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
 
+    .burger {
+        display: none;
+    }
+
+
     div {
         display: flex;
         align-items: center;
@@ -38,6 +43,8 @@ nav {
 
 @media only screen and (max-width: 1060px) {
 
+
+
     nav {
         .nav-elements {
             display: none;
@@ -45,6 +52,10 @@ nav {
 
         .languageSelector {
             display: none;
+        }
+
+        .burger {
+            display: flex;
         }
     }
 
