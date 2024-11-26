@@ -45,9 +45,7 @@ body {
 
 
 
-    section,
-    nav,
-    footer {
+    section {
         padding: 0px 50px;
         max-width: 1440px;
     }
@@ -55,7 +53,9 @@ body {
 
     nav,
     footer {
-        width: 100vw;
+        //min-width: 100vw;
+        padding: 0px 50px;
+        max-width: 1440px;
     }
 
 
@@ -132,6 +132,11 @@ input {
 
     body {
         font-size: 16px;
+
+        section, nav, footer {
+            padding: 0 20px;
+        }
+
     }
 
     h2 {
@@ -145,4 +150,16 @@ input {
     }
 
 
+}
+
+@media only screen and (max-width: 520px) {
+
+    body {
+     
+
+        section, nav, footer {
+            padding: 0 10px;
+        }
+
+    }
 }

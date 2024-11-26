@@ -76,6 +76,19 @@ h2 {
 
 
     }
+  
+}
+
+@media only screen and (max-width: 420px) {
+    .singleProject {
+        img {
+            width: 300px;
+            height: auto;
+
+        }
+
+
+    }
 
 
 }

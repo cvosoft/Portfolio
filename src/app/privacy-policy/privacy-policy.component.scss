@@ -1,3 +1,14 @@
+body {
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
 h2 {
     margin-bottom: 30px;
     margin-top: 20px;
@@ -6,6 +17,10 @@ h2 {
 h3 {
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+h4 {
+    margin-top:10px;
 }
 
 p {
@@ -17,4 +32,24 @@ h2,
 h3,
 h4 {
     color: #E15544;
+}
+
+
+@media only screen and (max-width: 520px) {
+
+    h2,
+    h3,
+    h4 {
+        font-size: 16px;
+    }
+
+    h4 {
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 20px 0px;
+    }
+
+
 }
