@@ -12,7 +12,7 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class LegalNoticeComponent {
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
 
 
 

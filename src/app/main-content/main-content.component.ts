@@ -6,6 +6,7 @@ import { ReferencesComponent } from "./references/references.component";
 import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
 import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -17,8 +18,9 @@ import { NavBarComponent } from "./hero-section/nav-bar/nav-bar.component";
 })
 export class MainContentComponent {
 
-  constructor() { }
-
+ 
+  constructor(private translate: TranslateService) {
+  }
 
 
 

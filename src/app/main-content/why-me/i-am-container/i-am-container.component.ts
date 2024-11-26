@@ -14,9 +14,7 @@ import AOS from 'aos';
 export class IAmContainerComponent {
 
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
+
   }
   toggler: boolean = true;
 

@@ -25,15 +25,15 @@ export class AppComponent {
   title = 'portfolio';
 
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
     //this.translate.use('de');
 
     // ist was im storage?
-    let lang = localStorage.getItem("lang");
-    if (lang == null) { lang = 'de' };
-    this.translate.use(lang);
+    //let lang = localStorage.getItem("lang");
+    //if (lang == null) { lang = 'de' };
+    //this.translate.use(lang);
 
     AOS.init();
 

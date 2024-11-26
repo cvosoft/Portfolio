@@ -18,7 +18,8 @@ export class NavBarComponent {
 
   toggleMenu() {
     if (this.showMenu == false) {
-      this.showMenu = true; console.log("sdg");
+      this.showMenu = true;
+      //console.log("sdg");
     } else { this.showMenu = false }
   }
 
@@ -49,7 +50,7 @@ export class NavBarComponent {
 
   useLanguage(language: string): void {
     //write language to local storage
-    localStorage.setItem("lang", language);
+    //localStorage.setItem("lang", language);
     this.translate.use(language);
   }
 
