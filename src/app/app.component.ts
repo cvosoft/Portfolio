@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { afterNextRender, Component, inject, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser, ViewportScroller } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./main-content/hero-section/nav-bar/nav-bar.component";
 import { HeroSectionComponent } from "./main-content/hero-section/hero-section.component";
@@ -23,9 +23,16 @@ import AOS from 'aos';
 })
 export class AppComponent {
   title = 'portfolio';
+  private _viewportScroller = inject(ViewportScroller);
 
 
   constructor(public translate: TranslateService) {
+
+    afterNextRender(() => {
+      this._viewportScroller.setOffset([0, 100]);
+      //this._viewportScroller.scrollToAnchor('anchor-4');
+    });
+
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
     //this.translate.use('de');
