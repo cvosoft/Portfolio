@@ -4,11 +4,12 @@ import { LogoComponent } from "../../../shared/logo/logo.component";
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
 import { TranslateService } from "@ngx-translate/core";
 import { RouterModule } from '@angular/router';
+import { LinksComponent } from "../nav-bar/links/links.component";
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [LogoComponent, TranslateModule, CommonModule, RouterModule],
+  imports: [LinksComponent, LogoComponent, TranslateModule, CommonModule, RouterModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })

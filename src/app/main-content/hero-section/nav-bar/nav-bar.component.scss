@@ -1,6 +1,5 @@
 header {
     width: 100vw;
-    height: 92px;
     background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
     position: sticky;
     z-index: 50;
@@ -14,5 +13,49 @@ header {
         margin: 0 auto;
         max-width: 1440px;
         padding: 0px 50px;
+        height: 92px;
+        font-weight: 500;
+        font-size: 22px;
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .languageSelector {
+            gap: 6px;
+
+            a:hover {
+                cursor: pointer;
+            }
+        }
+
+        .burger {
+            display: none;
+        }
+
+
     }
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    header {
+
+        nav {
+            .burger {
+                display: flex;
+            }
+            .languageSelector {
+                display: none;
+            }
+            .linklist {
+                display: none;
+            }
+
+        }
+    }
+
 }
