@@ -52,11 +52,12 @@ export class FormComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+
             this.secLeft = 5;
             this.showSuccess = true;
-            ngForm.resetForm();            
+            ngForm.resetForm();
 
-            setInterval(() => {
+            let interval = setInterval(() => {
               if (this.showSuccess) {
                 this.secLeft--;
               }
@@ -64,6 +65,7 @@ export class FormComponent {
 
             setTimeout(() => {
               this.showSuccess = false;
+              clearInterval(interval);
             }, 5000);
           },
           error: (error) => {
