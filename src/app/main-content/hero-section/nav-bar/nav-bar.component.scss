@@ -1,5 +1,5 @@
 header {
-    width: 100%; // 100vw macht Probleme!
+    width: calc(100vw - 9px); // 100vw - scrollbar!
     background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
     position: sticky;
     z-index: 50;
