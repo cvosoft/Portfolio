@@ -24,9 +24,6 @@
 
 
 body {
-
-    //overflow-x: hidden;
-
     font-family: 'robotomono', sans-serif;
     background: linear-gradient(174.25deg, #0B042D 24.9%, #1F0B80 39.2%, #0B042F 72.02%, #241085 106.54%);
     display: flex;
@@ -35,28 +32,19 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #02F4BF;
-
-
-    section {
-        margin-top: 100px;
-        //border: 1px solid green;
-    }
-
-
+    height: 100%;
 
 
     section {
         padding: 0px 50px;
         max-width: 1440px;
+        margin: 100px auto;
     }
 
 
-    nav,
-    footer {
-        //min-width: 100vw;
-        padding: 0px 50px;
-        max-width: 1440px;
-    }
+
+
+
 
 
 
@@ -132,11 +120,6 @@ input {
 
     body {
         font-size: 16px;
-
-        section, nav, footer {
-            padding: 0 20px;
-        }
-
     }
 
     h2 {
@@ -152,14 +135,3 @@ input {
 
 }
 
-@media only screen and (max-width: 520px) {
-
-    body {
-     
-
-        section, nav, footer {
-            padding: 0 10px;
-        }
-
-    }
-}

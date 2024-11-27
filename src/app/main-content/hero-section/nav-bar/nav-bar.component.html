@@ -1,38 +1,20 @@
-<nav>
-    <div>
-        <app-logo></app-logo>
-        <div class="nav-elements">
+<header>
+
+    <nav>
+        <div class="links">
+            <app-logo></app-logo>
             <a [routerLink]="['/']" fragment="whyme">{{'menu.why' | translate}}</a>
             <a [routerLink]="['/']" fragment="skills">{{'menu.skills' | translate}}</a>
             <a [routerLink]="['/']" fragment="projects">{{'menu.projects' | translate}}</a>
             <a [routerLink]="['/']" fragment="contact">{{'menu.contact' | translate}}</a>
         </div>
-    </div>
 
-    <div class="languageSelector">
-        <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
-        |
-        <a [ngStyle]="{'color': getLanguage2()}" (click)="useLanguage('en')">EN</a>
-    </div>
-
-    <img class="burger" style="cursor: pointer;" (click)="toggleMenu()" src="../../../../assets/img/nav/burger1.svg">
-
-    <div style="padding: 30px 50px; background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%); top:0; left:0; width:100%; justify-content:center;position: fixed; display: flex; flex-direction: column;"
-        [ngClass]="{'d-none':!showMenu}">
-        <img style="align-self: flex-end; cursor: pointer;" (click)="toggleMenu()"
-            src="../../../../assets/img/nav/burger2.svg">
-        <a (click)="toggleMenu()" [routerLink]="['/']" fragment="whyme">{{'menu.why' | translate}}</a>
-        <a (click)="toggleMenu()" [routerLink]="['/']" fragment="skills">{{'menu.skills' | translate}}</a>
-        <a (click)="toggleMenu()" [routerLink]="['/']" fragment="projects">{{'menu.projects' | translate}}</a>
-        <a (click)="toggleMenu()" [routerLink]="['/']" fragment="contact">{{'menu.contact' | translate}}</a>
-        <div style="gap: 6px">
+        <div class="languageSelector">
             <a [ngStyle]="{'color': getLanguage1()}" (click)="useLanguage('de')">DE</a>
             |
             <a [ngStyle]="{'color': getLanguage2()}" (click)="useLanguage('en')">EN</a>
         </div>
-    </div>
 
+    </nav>
 
-
-
-</nav>
+</header>
