@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from "@ngx-translate/core";   // <--- standalone only
@@ -45,17 +45,26 @@ export class FormComponent {
   };
 
   showSuccess = false;
+  secLeft = 5;
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.secLeft = 5;
             this.showSuccess = true;
-            ngForm.resetForm();
+            ngForm.resetForm();            
+
+            setInterval(() => {
+              if (this.showSuccess) {
+                this.secLeft--;
+              }
+            }, 1000);
+
             setTimeout(() => {
               this.showSuccess = false;
-            }, 6000);
+            }, 5000);
           },
           error: (error) => {
             console.error(error);

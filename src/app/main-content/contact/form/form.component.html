@@ -57,5 +57,8 @@
 </form>
 
 @if (showSuccess) {
-<span class="red-text" style="font-size: 20px;">{{'contactform.sentSucesss' | translate}}</span>
+<div class="success">
+    <span>{{'contactform.sentSucesss' | translate}}</span>
+    <span>({{secLeft}})</span>
+</div>
 }

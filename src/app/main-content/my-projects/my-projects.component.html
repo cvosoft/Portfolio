@@ -1,8 +1,8 @@
 <section>
-    <h2 data-aos="zoom-in" class="red-text centered">{{'projects.title' | translate}}</h2>
+    <h2 class="red-text centered">{{'projects.title' | translate}}</h2>
 
     @for (item of projectsList; track item.name; let toggler = $odd) {
-    <div [ngClass]="{'reverse':toggler}" class="singleProject">
+    <div [ngClass]="{'reverse':toggler}" class="singleProject" data-aos="flip-left">
         <img src="../../../assets/img/projects/{{item.img}}">
 
         <div class="otherSide">
