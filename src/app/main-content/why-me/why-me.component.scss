@@ -1,7 +1,7 @@
 section {
     display: flex;
-    justify-content: space-around;
-    gap: 100px;
+    justify-content: space-between;
+    //gap: 100px;
     font-size: 16px;
     font-weight: 400;
 
@@ -10,7 +10,7 @@ section {
     }
 
     .right {
-        flex: 0.6;
+        flex: 0.55;
     }
 
     img {
@@ -42,3 +42,4 @@ section {
     }
 
 }
+

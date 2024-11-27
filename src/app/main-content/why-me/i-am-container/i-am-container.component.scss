@@ -109,6 +109,13 @@
 
 }
 
+@media only screen and (max-width: 1210px) {
+
+    .el-3-2 {
+        grid-column: span 2 !important;
+    }
+}
+
 
 
 @media only screen and (max-width: 1060px) {
