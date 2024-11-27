@@ -39,18 +39,34 @@ header {
     }
 }
 
+.headerPopup {
+    gap: 40px;
+    align-items: center;
+    padding: 30px 50px;
+    background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen and (max-width: 980px) {
 
     header {
 
         nav {
+
             .burger {
                 display: flex;
             }
+
             .languageSelector {
                 display: none;
             }
+
             .linklist {
                 display: none;
             }
@@ -58,4 +74,20 @@ header {
         }
     }
 
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+    header {
+        nav {
+            padding: 0px 10px;
+        }
+    }
+
+
+    .headerPopup {
+        padding: 30px 10px;
+    }
 }

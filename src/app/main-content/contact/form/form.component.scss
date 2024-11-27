@@ -149,11 +149,12 @@ button[disabled] {
     }
 
     .checkbox {
-        align-items: center;
+        align-items: flex-start;
 
         button {
             margin-top: 30px;
             margin-bottom: 30px;
+            align-self: center;
         }
     }
 

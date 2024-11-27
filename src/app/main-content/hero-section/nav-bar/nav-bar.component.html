@@ -22,8 +22,8 @@
         <img class="burger" style="cursor: pointer;" (click)="toggleMenu()"
             src="../../../../assets/img/nav/burger1.svg">
 
-        <div style="padding: 30px 50px; background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%); top:0; left:0; width:100%; justify-content:center;position: fixed; display: flex; flex-direction: column;"
-            [ngClass]="{'d-none':!showMenu}">
+        <div class="headerPopup" [ngClass]="{'d-none':!showMenu}">
+
             <img style="align-self: flex-end; cursor: pointer;" (click)="toggleMenu()"
                 src="../../../../assets/img/nav/burger2.svg">
             <a (click)="toggleMenu()" [routerLink]="['/']" fragment="whyme">{{'menu.why' | translate}}</a>
