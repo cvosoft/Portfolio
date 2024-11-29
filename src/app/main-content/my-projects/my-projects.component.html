@@ -9,7 +9,7 @@
             <h3>{{item.name}}</h3>
             <span>{{item.skills}}</span>
 
-            @if (translate.currentLang == "de")
+            @if (translate.currentLang == "de" || translate.currentLang === undefined )
             {
             <span>{{item.textde}}</span>} @else {
             <span>{{item.text}}</span>}
