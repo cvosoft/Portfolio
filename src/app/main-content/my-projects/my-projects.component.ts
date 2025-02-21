@@ -19,7 +19,7 @@ export class MyProjectsComponent {
     //console.log(this.translate.currentLang);
   }
 
- 
+
 
   projectsList = [
     {
@@ -46,8 +46,8 @@ export class MyProjectsComponent {
       textde: "Diese App ist ein 'Slack'-Clone: Durch die intuitive Bedienung und Echtzeit-Nachrichten revolutioniert es die Kommunikation und Zusammenarbeit in Gruppen.",
       text: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       img: "dabubblescreenshot.png",
-      liveURL: "",
-      gitURL: "",
+      liveURL: "https://dab.christophvoelker.com",
+      gitURL: "https://github.com/cvosoft/DABubble",
     }
   ]
 

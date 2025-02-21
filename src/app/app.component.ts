@@ -12,7 +12,7 @@ import { ContactComponent } from "./main-content/contact/contact.component";
 import { MainContentComponent } from './main-content/main-content.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from "@ngx-translate/core";
-import AOS from 'aos';
+//import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +42,7 @@ export class AppComponent {
     //if (lang == null) { lang = 'de' };
     //this.translate.use(lang);
 
-    AOS.init();
+    //AOS.init();
 
   }
 }
