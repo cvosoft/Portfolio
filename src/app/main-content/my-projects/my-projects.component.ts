@@ -29,7 +29,7 @@ export class MyProjectsComponent {
       textde: "Ein Kanban-Taskmanager: Erstelle und organisiere Aufgaben mithilfe von Drag & Drop, weise den Aufgaben Benutzer und Kategorien zu.",
       img: "joinscreenshot.png",
       liveURL: "https://join.christophvoelker.com",
-      gitURL: "https://github.com/cvosoft/Join",
+      gitURL: "https://github.com/cvosoft/Join/",
     },
     {
       name: "El Pollo Loco",
@@ -38,16 +38,16 @@ export class MyProjectsComponent {
       text: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       img: "pollolocoscreenshot.png",
       liveURL: "https://epl.christophvoelker.com",
-      gitURL: "https://github.com/cvosoft/JumpNRun",
+      gitURL: "https://github.com/cvosoft/ElPolloLoco/",
     },
     {
-      name: "DA Bubble",
+      name: "DABubble",
       skills: "Angular | TypeScript | HTML | CSS",
       textde: "Diese App ist ein 'Slack'-Clone: Durch die intuitive Bedienung und Echtzeit-Nachrichten revolutioniert es die Kommunikation und Zusammenarbeit in Gruppen.",
       text: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       img: "dabubblescreenshot.png",
       liveURL: "https://dab.christophvoelker.com",
-      gitURL: "https://github.com/cvosoft/DABubble",
+      gitURL: "https://github.com/cvosoft/DABubble/",
     }
   ]
 
