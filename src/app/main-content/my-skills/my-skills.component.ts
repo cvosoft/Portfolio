@@ -15,6 +15,35 @@ export class MySkillsComponent {
 
   skillsList = [
     {
+      name: "JavaScript",
+      img: "js.svg"
+    },
+    {
+      name: "Linux",
+      img: "Linux.svg"
+    },
+    {
+      name: "Shell Scripting",
+      img: "Shell-Scripting.svg"
+    },    
+    {
+      name: "Python",
+      img: "Python.svg"
+    },
+    
+    {
+      name: "Django",
+      img: "Django.svg"
+    },
+    {
+      name: "DRF",
+      img: "DRF.svg"
+    },      
+    {
+      name: "SQL",
+      img: "SQL.svg"
+    },    
+    {
       name: "Angular",
       img: "ang.svg"
     },
@@ -22,10 +51,7 @@ export class MySkillsComponent {
       name: "TypeScript",
       img: "ts.svg"
     },
-    {
-      name: "JavaScript",
-      img: "js.svg"
-    },
+
     {
       name: "HTML",
       img: "html.svg"
@@ -46,14 +72,8 @@ export class MySkillsComponent {
       name: "GIT",
       img: "git.svg"
     },
-    {
-      name: "Scrum",
-      img: "scrum.svg"
-    },
-    {
-      name: "Material<br>design",
-      img: "matdes.svg"
-    },
+
+   
     {
       name: 'Challenge me',
       img: "chall.svg"
@@ -62,3 +82,12 @@ export class MySkillsComponent {
 
 
 }
+
+//{
+//  name: "Material<br>design",
+//  img: "matdes.svg"
+//},
+// {
+//   name: "Scrum",
+//   img: "scrum.svg"
+// },

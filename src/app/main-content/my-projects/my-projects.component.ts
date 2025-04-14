@@ -25,8 +25,8 @@ export class MyProjectsComponent {
     {
       name: "Coderr",
       skills: "JavaScript | HTML | CSS | Django Rest Framework",
-      text: "A Fiverr clone.",
-      textde: "A Fiverr clone.",
+      text: "A Fiverr clone: Log in as a business user and create offers, log in as customer, search, find and order what you are looking for.",
+      textde: "Ein Freelancer-Portal wie Fiverr: Erstelle Deine Angebote und lass Dich von Kunden finden.",
       img: "coderr.png",
       buttons: 3,
       liveURL: "https://coderr.christophvoelker.com",
