@@ -23,6 +23,16 @@ export class MyProjectsComponent {
 
   projectsList = [
     {
+      name: "Coderr",
+      skills: "JavaScript | HTML | CSS | Django Rest Framework",
+      text: "A Fiverr clone.",
+      textde: "A Fiverr clone.",
+      img: "coderr.png",
+      liveURL: "https://coderr.christophvoelker.com",
+      gitURL: "https://github.com/cvosoft/coderr-backend/",
+      gitURL2: "https://github.com/cvosoft/coderr-frontend/",
+    },    
+    {
       name: "Join",
       skills: "JavaScript | HTML | CSS | Firebase oder DRF",
       text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
