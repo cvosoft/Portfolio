@@ -28,9 +28,12 @@ export class MyProjectsComponent {
       text: "A Fiverr clone.",
       textde: "A Fiverr clone.",
       img: "coderr.png",
+      buttons: 3,
       liveURL: "https://coderr.christophvoelker.com",
-      gitURL: "https://github.com/cvosoft/coderr-backend/",
-      gitURL2: "https://github.com/cvosoft/coderr-frontend/",
+      gitURLBackend: "https://github.com/cvosoft/coderr-backend/",
+      buttonText1: "GitHub (Backend)",
+      gitURLFrontend: "https://github.com/cvosoft/coderr-frontend/",
+      buttonText2: "GitHub (Frontend)"
     },    
     {
       name: "Join",

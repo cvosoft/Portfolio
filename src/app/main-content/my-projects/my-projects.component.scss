@@ -21,6 +21,7 @@ h2 {
 
         .button-pair {
             display: flex;
+            flex-wrap: wrap;
             gap: 24px;
         }
 

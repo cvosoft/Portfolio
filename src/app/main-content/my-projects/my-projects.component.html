@@ -14,8 +14,16 @@
             <span>{{item.textde}}</span>} @else {
             <span>{{item.text}}</span>}
             <div class="button-pair">
+
+                @if (item.buttons == 3) {
+                <a target="_blank" href="{{item.gitURLBackend}}"><button class="secondary1">{{item.buttonText1}}</button></a>
+                <a target="_blank" href="{{item.gitURLFrontend}}"><button class="secondary1">{{item.buttonText2}}</button></a>
+                <a target="_blank" href="{{item.liveURL}}"><button class="primary1">Live Test</button></a>
+                }
+                @else {
                 <a target="_blank" href="{{item.gitURL}}"><button class="secondary1">GitHub</button></a>
                 <a target="_blank" href="{{item.liveURL}}"><button class="primary1">Live Test</button></a>
+                }
             </div>
         </div>
     </div>
