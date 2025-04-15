@@ -38,11 +38,27 @@ export class MySkillsComponent {
     {
       name: "DRF",
       img: "DRF.svg"
-    },      
+    },    
+    {
+      name: "php",
+      img: "php.svg"
+    },       
     {
       name: "SQL",
       img: "SQL.svg"
     },    
+    {
+      name: "Matlab",
+      img: "matlab.svg"
+    },
+    {
+      name: "Octave",
+      img: "octave.svg"
+    },        
+    {
+      name: "R",
+      img: "r.svg"
+    },     
     {
       name: "Angular",
       img: "ang.svg"
