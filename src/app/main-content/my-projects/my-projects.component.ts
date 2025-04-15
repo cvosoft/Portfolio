@@ -34,7 +34,7 @@ export class MyProjectsComponent {
       buttonText1: "GitHub (Backend)",
       gitURLFrontend: "https://github.com/cvosoft/coderr-frontend/",
       buttonText2: "GitHub (Frontend)"
-    },    
+    },
     {
       name: "Join",
       skills: "JavaScript | HTML | CSS | Firebase oder DRF",
@@ -61,6 +61,15 @@ export class MyProjectsComponent {
       img: "dabubblescreenshot.png",
       liveURL: "https://dab.christophvoelker.com",
       gitURL: "https://github.com/cvosoft/DABubble/",
+    },
+    {
+      name: "MUSHRA Drag&Drop",
+      buttons: 1,
+      skills: "Matlab | Psychoacoustics | Audiology",
+      text: "A modification designed to maximise the accessibility of MUSHRA for elderly and technically non-experienced listeners, who constitute the typical target group in hearing aid evaluation.",
+      textde: "Eine Modifikation, die darauf ausgelegt ist, die Zugänglichkeit von MUSHRA für ältere und technisch unerfahrene Hörer zu maximieren – die typische Zielgruppe bei der Bewertung von Hörgeräten.",
+      img: "mushra.png",
+      URL: "https://www.tandfonline.com/doi/full/10.1080/14992027.2016.1220680",
     }
   ]
 
