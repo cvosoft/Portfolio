@@ -46,7 +46,7 @@ export class MyProjectsComponent {
     },
     {
       name: "El Pollo Loco",
-      skills: "JavaScript | HTML | CSS",
+      skills: "JavaScript | OOP | HTML | CSS",
       textde: "Ein Jump&Run programmiert mithilfe eines objektorientierten Ansatzes: Hilf Pepe dabei, Münzen und Salsaflaschen zu finden, um die Endgegner zu besiegen.",
       text: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       img: "pollolocoscreenshot.png",
